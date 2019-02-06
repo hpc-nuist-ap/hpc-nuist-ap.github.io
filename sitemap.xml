@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/</loc>
+    <lastmod>2019-02-06T22:55:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/developers-guide/</loc>
+    <lastmod>2019-02-06T22:54:30+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/tutorials/</loc>
+    <lastmod>2019-02-06T22:53:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/faq/</loc>
+    <lastmod>2019-02-06T22:52:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/account/</loc>
+    <lastmod>2019-02-06T22:51:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/overview/</loc>
+    <lastmod>2019-02-06T22:50:50+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/</loc>
     <lastmod>2019-02-03T00:00:00+00:00</lastmod>
   </url>
