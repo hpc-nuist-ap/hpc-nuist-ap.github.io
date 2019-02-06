@@ -1,0 +1,12 @@
+baseURL = "https://hpc-nuist-ap.github.io/"
+languageCode = "en-us"
+title = "HPC"
+# Change the default theme to be use when building the site with Hugo
+theme = "hugo-theme-learn"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+themeVariant = "blue"
