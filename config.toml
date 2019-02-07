@@ -10,3 +10,21 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
 themeVariant = "blue"
+editURL = "https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/"
+
+[[menu.shortcuts]] 
+name = "<i class='fab fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
