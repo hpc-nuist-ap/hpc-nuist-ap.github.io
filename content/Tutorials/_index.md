@@ -1,13 +1,12 @@
 +++
 title = "Tutorials"
-date = 2019-02-06T22:53:13+08:00
-weight = 5
+weight = 6
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>6. </b>"
 +++
 
-### Chapter X
+### Chapter 6
 
-# Some Chapter title
+# Tutorials
 
 Lorem Ipsum.

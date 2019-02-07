@@ -1,13 +1,12 @@
 +++
 title = "FAQ"
-date = 2019-02-06T22:52:35+08:00
-weight = 5
+weight = 7
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>7. </b>"
 +++
 
-### Chapter X
+### Chapter 7
 
-# Some Chapter title
+# FAQ
 
 Lorem Ipsum.

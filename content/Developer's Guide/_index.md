@@ -1,13 +1,13 @@
 +++
 title = "Developer's Guide"
-date = 2019-02-06T22:54:30+08:00
-weight = 5
+weight = 4
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>4. </b>"
+
 +++
 
-### Chapter X
+### Chapter 4
 
-# Some Chapter title
+# Developer's Guide
 
 Lorem Ipsum.
