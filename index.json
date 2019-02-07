@@ -1,49 +1,56 @@
 [
 {
-	"uri": "https://hpc-nuist-ap.github.io/users-guide/",
-	"title": "User&#39;s Guide",
+	"uri": "https://hpc-nuist-ap.github.io/overview/",
+	"title": "Overview",
 	"tags": [],
 	"description": "",
-	"content": " Chapter X Some Chapter title Lorem Ipsum.\n"
-},
-{
-	"uri": "https://hpc-nuist-ap.github.io/developers-guide/",
-	"title": "Developer&#39;s Guide",
-	"tags": [],
-	"description": "",
-	"content": " Chapter X Some Chapter title Lorem Ipsum.\n"
-},
-{
-	"uri": "https://hpc-nuist-ap.github.io/tutorials/",
-	"title": "Tutorials",
-	"tags": [],
-	"description": "",
-	"content": " Chapter X Some Chapter title Lorem Ipsum.\n"
-},
-{
-	"uri": "https://hpc-nuist-ap.github.io/faq/",
-	"title": "FAQ",
-	"tags": [],
-	"description": "",
-	"content": " Chapter X Some Chapter title Lorem Ipsum.\n"
+	"content": " Chapter 1 Overview Overview of HPC\n"
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/account/",
 	"title": "Account",
 	"tags": [],
 	"description": "",
-	"content": " Chapter X Some Chapter title Lorem Ipsum.\n"
+	"content": " Chapter 2 Account Lorem Ipsum.\n"
 },
 {
-	"uri": "https://hpc-nuist-ap.github.io/overview/",
-	"title": "Overview",
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/",
+	"title": "User&#39;s Guide",
 	"tags": [],
 	"description": "",
-	"content": " Chapter X Some Chapter title Lorem Ipsum.\n"
+	"content": " Chapter 3 User\u0026rsquo;s Guide Lorem Ipsum.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/developers-guide/",
+	"title": "Developer&#39;s Guide",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 4 Developer\u0026rsquo;s Guide Lorem Ipsum.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/superusers-guide/",
+	"title": "Superuser&#39;s Guide",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 5 Superuser\u0026rsquo;s Guide Lorem Ipsum.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/tutorials/",
+	"title": "Tutorials",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 6 Tutorials Lorem Ipsum.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/faq/",
+	"title": "FAQ",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 7 FAQ Lorem Ipsum.\n"
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/",
-	"title": "About",
+	"title": "hpc-nuist-ap",
 	"tags": [],
 	"description": "",
 	"content": " About In recognition of the increasing importance of research computing across many disciplines, School of Atmospheric Physics (AP), NUIST has made a significant investment in developing the High Performance Computing service, as a way to grow and sustain high performance computing.\nThis service is intended to provide AP\u0026rsquo;s campus researchers with state-of-the-art, professionally-administered computing systems and ancillary infrastructure.\nMission Our mission is to deliver reliable, sustainable computing resources and services to meet the computational research demands of the AP community: address fundamental problems in research and engineering that require computation. Examples of these problems include global climate modeling, cloud modeling, weather forecast, air quality forecast, and many more.\nPeople This service is supported by a collaboration with the teachers at AP.\n Chao Liu Tianliang Zhao Xiaoyan Ma Yan Yin  Contribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it.\n"
@@ -54,6 +61,20 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/credits/",
+	"title": "Credits",
+	"tags": [],
+	"description": "",
+	"content": " Contributors Thanks to them  for making hpc-nuist-ap better!\n.ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @zxdawn 10 commits   "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/overview/node-allocation/",
+	"title": "Node Allocation",
+	"tags": [],
+	"description": "",
+	"content": " The HPC Linux computing resource consists of a total 16 compute nodes in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.\nGeneral Computing Partitions and Nodes These are general nodes available to all HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     low node1 ~ node6 6 125 G 24 2.5 Xeon - 50 G    Private Computing Partitions and Nodes These are personal nodes available to partial HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     high node7 ~ node8 2 125 G 24 2.5 Xeon - 50 G   Addnode node9 ~ node14 6 125 G 24 2.5 Xeon - 50 G   zhao node15 ~ node16 2 125 G 24 2.5 Xeon - 50 G    Students could have the permission of additional nodes if they\u0026rsquo;re belong to teachers mentioned below.\nhigh: Yan Yin; Addnode: Xiaoyan Ma, Chao Liu; zhao: Tianliang Zhao\n Some nodes are privately owned and are not available to all users. In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/tags/",

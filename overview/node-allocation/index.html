@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Tags :: HPC</title>
+    <title>Node Allocation :: HPC</title>
 
     
     <link href="/css/nucleus.css?1549546498" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/">
+  <body class="" data-url="/overview/node-allocation/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/overview/" title="Overview" class="dd-item 
-        
+        parent
         
         
         ">
@@ -100,7 +100,7 @@
  
   
     
-      <li data-nav-id="/overview/node-allocation/" title="Node Allocation" class="dd-item ">
+      <li data-nav-id="/overview/node-allocation/" title="Node Allocation" class="dd-item active">
         <a href="/overview/node-allocation/">
         Node Allocation
         
@@ -296,6 +296,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/Overview/Node%20allocation.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -312,7 +323,19 @@
                     
           
           
-            Tags
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>hpc-nuist-ap</a> > <a href='/overview/'>Overview</a> > Node Allocation
+          
+         
+          
+         
           
         
                  
@@ -321,7 +344,18 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#general-computing-partitions-and-nodes">General Computing Partitions and Nodes</a></li>
+<li><a href="#private-computing-partitions-and-nodes">Private Computing Partitions and Nodes</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -333,7 +367,7 @@
         
         <div id="body-inner">
           
-            <h1>Tags</h1>
+            <h1>Node Allocation</h1>
           
 
         
@@ -341,9 +375,115 @@
 
 
 
+<p>The HPC Linux computing resource consists of a total <strong>16 compute nodes</strong> in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.</p>
+
+<h3 id="general-computing-partitions-and-nodes">General Computing Partitions and Nodes</h3>
+
+<p>These are general nodes available to <strong>all HPC researchers</strong>:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Partition Names</th>
+<th align="center">Node Range</th>
+<th align="center"># of Nodes</th>
+<th align="center">Mem size</th>
+<th align="center">Cores per Node</th>
+<th align="center">CPU Speed GHz</th>
+<th align="center">CPU Type</th>
+<th align="center">GPUs per Node</th>
+<th align="center">/tmp Size</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">low</td>
+<td align="center">node1 ~ node6</td>
+<td align="center">6</td>
+<td align="center">125 G</td>
+<td align="center">24</td>
+<td align="center">2.5</td>
+<td align="center">Xeon</td>
+<td align="center">-</td>
+<td align="center">50 G</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="private-computing-partitions-and-nodes">Private Computing Partitions and Nodes</h3>
+
+<p>These are personal nodes available to <strong>partial HPC researchers</strong>:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Partition Names</th>
+<th align="center">Node Range</th>
+<th align="center"># of Nodes</th>
+<th align="center">Mem size</th>
+<th align="center">Cores per Node</th>
+<th align="center">CPU Speed GHz</th>
+<th align="center">CPU Type</th>
+<th align="center">GPUs per Node</th>
+<th align="center">/tmp Size</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">high</td>
+<td align="center">node7 ~ node8</td>
+<td align="center">2</td>
+<td align="center">125 G</td>
+<td align="center">24</td>
+<td align="center">2.5</td>
+<td align="center">Xeon</td>
+<td align="center">-</td>
+<td align="center">50 G</td>
+</tr>
+
+<tr>
+<td align="center">Addnode</td>
+<td align="center">node9 ~ node14</td>
+<td align="center">6</td>
+<td align="center">125 G</td>
+<td align="center">24</td>
+<td align="center">2.5</td>
+<td align="center">Xeon</td>
+<td align="center">-</td>
+<td align="center">50 G</td>
+</tr>
+
+<tr>
+<td align="center">zhao</td>
+<td align="center">node15 ~ node16</td>
+<td align="center">2</td>
+<td align="center">125 G</td>
+<td align="center">24</td>
+<td align="center">2.5</td>
+<td align="center">Xeon</td>
+<td align="center">-</td>
+<td align="center">50 G</td>
+</tr>
+</tbody>
+</table>
+
+<p>Students could have the permission of additional nodes if they&rsquo;re belong to teachers mentioned below.</p>
+
+<div class="notices info" ><p><strong>high</strong>: Yan Yin;  <strong>Addnode</strong>: Xiaoyan Ma, Chao Liu;  <strong>zhao</strong>: Tianliang Zhao</p>
+</div>
+
+
+<div class="notices note" ><p>Some nodes are privately owned and are not available to all users. In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.</p>
+</div>
+
+
+
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -376,8 +516,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -391,6 +529,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -410,6 +549,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -511,8 +653,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/overview/" title="Overview"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/account/" title="Account" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -543,3 +687,4 @@
 
   </body>
 </html>
+
