@@ -6,6 +6,10 @@ install:
   - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.52/hugo_0.52_Linux-64bit.deb
   - sudo dpkg -i /tmp/hugo.deb
 
+before_script:
+  - git config --global user.name "hpc-nuist-ap"
+  - git config --global user.email "hpc-nuist-ap@users.noreply.github.com"
+
 script:
   - hugo
 
