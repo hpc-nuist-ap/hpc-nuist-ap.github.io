@@ -1,5 +1,6 @@
 ---
 title: "Node Allocation"
+weight: 10
 ---
 
 The HPC Linux computing resource consists of a total **16 compute nodes** in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.
@@ -20,7 +21,7 @@ These are personal nodes available to **partial HPC researchers**:
 | :---------------: | :---------------: | :----------: | :--------: | :--------------: | :-------------: | :--------: | :-------------: | :---------: |
 | high            | node7 ~ node8   | 2          | 125 G    | 24             | 2.5           | Xeon     | -             | 50 G      |
 | Addnode         | node9 ~ node14  | 6          | 125 G    | 24             | 2.5           | Xeon     | -             | 50 G      |
-| zhao            | node15 ~ node16 | 2          | 125 G    | 24             | 2.5           | Xeon     | -             | 50 G      |
+| zhao            | node15 ~ node16 | 2          | 125 G    | 24 (node15)<br />28 (node16) | 2.5           | Xeon     | -             | 50 G      |
 
 Students could have the permission of additional nodes if they're belong to teachers mentioned below.
 
