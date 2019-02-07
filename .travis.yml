@@ -1,9 +1,6 @@
 ---
-before_install:
-  - composer config -g github-oauth.github.com ${GITHUB_TOKEN}
-
 install:
-  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.52/hugo_0.52_Linux-64bit.deb
+  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb
   - sudo dpkg -i /tmp/hugo.deb
 
 before_script:
