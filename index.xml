@@ -12,16 +12,6 @@
     
     
     <item>
-      <title>Credits</title>
-      <link>https://hpc-nuist-ap.github.io/credits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hpc-nuist-ap.github.io/credits/</guid>
-      <description> Contributors Thanks to them  for making hpc-nuist-ap better!
-.ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @zxdawn 10 commits   </description>
-    </item>
-    
-    <item>
       <title>Node Allocation</title>
       <link>https://hpc-nuist-ap.github.io/overview/node-allocation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -30,6 +20,18 @@
       <description>The HPC Linux computing resource consists of a total 16 compute nodes in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.
 General Computing Partitions and Nodes These are general nodes available to all HPC researchers:
    Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     low node1 ~ node6 6 125 G 24 2.</description>
+    </item>
+    
+    <item>
+      <title>Account Resource Limits</title>
+      <link>https://hpc-nuist-ap.github.io/overview/account-resource-limits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hpc-nuist-ap.github.io/overview/account-resource-limits/</guid>
+      <description>The following information outlines the usage limits for specific HPC account types.
+Compute Hour Limits Time on the Linux computing resource is allocated in core hours.
+core hours = nodes * cores * hours
+ For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.</description>
     </item>
     
   </channel>

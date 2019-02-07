@@ -49,6 +49,20 @@
 	"content": " Chapter 7 FAQ Lorem Ipsum.\n"
 },
 {
+	"uri": "https://hpc-nuist-ap.github.io/overview/node-allocation/",
+	"title": "Node Allocation",
+	"tags": [],
+	"description": "",
+	"content": " The HPC Linux computing resource consists of a total 16 compute nodes in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.\nGeneral Computing Partitions and Nodes These are general nodes available to all HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     low node1 ~ node6 6 125 G 24 2.5 Xeon - 50 G    Private Computing Partitions and Nodes These are personal nodes available to partial HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     high node7 ~ node8 2 125 G 24 2.5 Xeon - 50 G   Addnode node9 ~ node14 6 125 G 24 2.5 Xeon - 50 G   zhao node15 ~ node16 2 125 G 24 (node15)\n28 (node16) 2.5 Xeon - 50 G    Students could have the permission of additional nodes if they\u0026rsquo;re belong to teachers mentioned below.\nhigh: Yan Yin; Addnode: Xiaoyan Ma, Chao Liu; zhao: Tianliang Zhao\n Some nodes are privately owned and are not available to all users. In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/overview/account-resource-limits/",
+	"title": "Account Resource Limits",
+	"tags": [],
+	"description": "",
+	"content": " The following information outlines the usage limits for specific HPC account types.\nCompute Hour Limits Time on the Linux computing resource is allocated in core hours.\ncore hours = nodes * cores * hours\n For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.\nConcurrent Job Limits In general, jobs will be scheduled and run on a first-come, first-served basis within a partition, provided that adequate resources are available. To maximize the use of computing resources, HPC management, in consultation with the HPC allocation committee, may restrict the number of jobs you can run concurrently from a given account.\nGeneral Partition Rules    Partition Name Maximum Jobs Queued Maximum Node Count Maximum Wall Time Maximum Jobs per User     low       high       Addnode       zhao        Disk Space    Root of home directory Quota     /pulic/home 300 G   /public1/home 1.5 T   /datadir1 2.5 T    Please check the home directory by echo $HOME and check used disk space by du -sh $HOME.\n If used space is larger than quota, you couldn\u0026rsquo;t store files anymore and need to delete some files.\n "
+},
+{
 	"uri": "https://hpc-nuist-ap.github.io/",
 	"title": "hpc-nuist-ap",
 	"tags": [],
@@ -61,20 +75,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "https://hpc-nuist-ap.github.io/credits/",
-	"title": "Credits",
-	"tags": [],
-	"description": "",
-	"content": " Contributors Thanks to them  for making hpc-nuist-ap better!\n.ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @zxdawn 10 commits   "
-},
-{
-	"uri": "https://hpc-nuist-ap.github.io/overview/node-allocation/",
-	"title": "Node Allocation",
-	"tags": [],
-	"description": "",
-	"content": " The HPC Linux computing resource consists of a total 16 compute nodes in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.\nGeneral Computing Partitions and Nodes These are general nodes available to all HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     low node1 ~ node6 6 125 G 24 2.5 Xeon - 50 G    Private Computing Partitions and Nodes These are personal nodes available to partial HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     high node7 ~ node8 2 125 G 24 2.5 Xeon - 50 G   Addnode node9 ~ node14 6 125 G 24 2.5 Xeon - 50 G   zhao node15 ~ node16 2 125 G 24 2.5 Xeon - 50 G    Students could have the permission of additional nodes if they\u0026rsquo;re belong to teachers mentioned below.\nhigh: Yan Yin; Addnode: Xiaoyan Ma, Chao Liu; zhao: Tianliang Zhao\n Some nodes are privately owned and are not available to all users. In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/tags/",

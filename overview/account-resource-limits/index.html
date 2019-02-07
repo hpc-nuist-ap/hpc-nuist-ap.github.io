@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.52" />
+    <meta name="generator" content="Hugo 0.54.0" />
     <meta name="description" content="">
 
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Credits :: HPC</title>
+    <title>Account Resource Limits :: HPC</title>
 
     
-    <link href="/css/nucleus.css?1549546774" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1549546774" rel="stylesheet">
-    <link href="/css/hybrid.css?1549546774" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1549546774" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1549546774" rel="stylesheet">
-    <link href="/css/auto-complete.css?1549546774" rel="stylesheet">
-    <link href="/css/theme.css?1549546774" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1549546774" rel="stylesheet">
+    <link href="/css/nucleus.css?1549551316" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1549551316" rel="stylesheet">
+    <link href="/css/hybrid.css?1549551316" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1549551316" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1549551316" rel="stylesheet">
+    <link href="/css/auto-complete.css?1549551316" rel="stylesheet">
+    <link href="/css/theme.css?1549551316" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1549551316" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1549546774" rel="stylesheet">
+      <link href="/css/theme-blue.css?1549551316" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1549546774"></script>
+    <script src="/js/jquery-2.x.min.js?1549551316"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/credits/">
+  <body class="" data-url="/overview/account-resource-limits/">
     <nav id="sidebar" class="">
 
 
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1549546774"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1549546774"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1549551316"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1549551316"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/hpc-nuist-ap.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1549546774"></script>
+<script type="text/javascript" src="/js/search.js?1549551316"></script>
 
     
   </div>
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/overview/" title="Overview" class="dd-item 
-        
+        parent
         
         
         ">
@@ -103,6 +103,25 @@
       <li data-nav-id="/overview/node-allocation/" title="Node Allocation" class="dd-item ">
         <a href="/overview/node-allocation/">
         Node Allocation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/account-resource-limits/" title="Account Resource Limits" class="dd-item active">
+        <a href="/overview/account-resource-limits/">
+        Account Resource Limits
         
         </a>
     </li>
@@ -300,7 +319,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/credits.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/Overview/Account%20Resource%20Limits.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -315,6 +334,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -325,7 +346,13 @@
             
           
           
-            <a href='/'>hpc-nuist-ap</a> > Credits
+            
+            
+          
+          
+            <a href='/'>hpc-nuist-ap</a> > <a href='/overview/'>Overview</a> > Account Resource Limits
+          
+         
           
          
           
@@ -334,6 +361,26 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#compute-hour-limits">Compute Hour Limits</a></li>
+<li><a href="#concurrent-job-limits">Concurrent Job Limits</a></li>
+<li><a href="#general-partition-rules">General Partition Rules</a></li>
+<li><a href="#disk-space">Disk Space</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -341,7 +388,7 @@
         
         <div id="body-inner">
           
-            <h1>Credits</h1>
+            <h1>Account Resource Limits</h1>
           
 
         
@@ -349,39 +396,105 @@
 
 
 
-<h2 id="contributors">Contributors</h2>
+<p>The following information outlines the usage limits for specific HPC account types.</p>
 
-<p>Thanks to them <i class="fas fa-heart"></i> for making hpc-nuist-ap better!</p>
+<h3 id="compute-hour-limits">Compute Hour Limits</h3>
 
-<style type="text/css">
-.ghContributors{
-display:flex;
-flex-flow:  wrap;
-align-content: flex-start
-}
-.ghContributors > div{
-width: 50% ;
-display: inline-flex;
-margin-bottom: 5px;
-}
-.ghContributors > div label{
-padding-left: 4px ;
-}
-.ghContributors > div span{
-font-size: x-small;
-padding-left: 4px ;
-}
-</style>
-<div class="ghContributors">
-  
-  
-  <div>
-    <img src="https://avatars3.githubusercontent.com/u/30388627?v=4" class="inline" width="32" height="32" style="height: 32px;height: 32px;margin-bottom:.25em; vertical-align:middle; ">
-    <label><a href="https://github.com/zxdawn">@zxdawn</a></label>
-    <span class="contributions">10 commits</span>
-  </div>
-  
+<p>Time on the Linux computing resource is allocated in <strong>core hours</strong>.</p>
+
+<div class="notices note" ><p>core hours = nodes * cores * hours</p>
 </div>
+
+
+<p>For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.</p>
+
+<h3 id="concurrent-job-limits">Concurrent Job Limits</h3>
+
+<p>In general, jobs will be scheduled and run on a first-come, first-served basis within a partition, provided that adequate resources are available. To maximize the use of computing resources, HPC management, in consultation with the HPC allocation committee, may restrict the number of jobs you can run concurrently from a given account.</p>
+
+<h3 id="general-partition-rules">General Partition Rules</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Partition Name</th>
+<th align="center">Maximum Jobs Queued</th>
+<th align="center">Maximum Node Count</th>
+<th align="center">Maximum Wall Time</th>
+<th>Maximum Jobs per User</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">low</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="center">high</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="center">Addnode</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="center">zhao</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="disk-space">Disk Space</h3>
+
+<table>
+<thead>
+<tr>
+<th>Root of home directory</th>
+<th>Quota</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>/pulic/home</code></td>
+<td>300 G</td>
+</tr>
+
+<tr>
+<td><code>/public1/home</code></td>
+<td>1.5 T</td>
+</tr>
+
+<tr>
+<td><code>/datadir1</code></td>
+<td>2.5 T</td>
+</tr>
+</tbody>
+</table>
+
+<div class="notices note" ><p>Please check the home directory by <code>echo $HOME</code> and check used disk space by <code>du -sh $HOME</code>.</p>
+</div>
+
+
+<div class="notices warning" ><p>If used space is larger than quota, you couldn&rsquo;t store files anymore and need to delete some files.</p>
+</div>
+
 
 
 <footer class=" footline" >
@@ -420,8 +533,6 @@ padding-left: 4px ;
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -435,6 +546,26 @@ padding-left: 4px ;
             
             
                 
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -454,6 +585,9 @@ padding-left: 4px ;
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -555,8 +689,10 @@ padding-left: 4px ;
 	 
 	 
 		
+			<a class="nav nav-prev" href="/overview/node-allocation/" title="Node Allocation"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/account/" title="Account" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -566,20 +702,20 @@ padding-left: 4px ;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1549546775"></script>
-    <script src="/js/perfect-scrollbar.min.js?1549546775"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1549546775"></script>
-    <script src="/js/jquery.sticky.js?1549546775"></script>
-    <script src="/js/featherlight.min.js?1549546775"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1549546775"></script>
-    <script src="/js/highlight.pack.js?1549546775"></script>
+    <script src="/js/clipboard.min.js?1549551316"></script>
+    <script src="/js/perfect-scrollbar.min.js?1549551316"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1549551316"></script>
+    <script src="/js/jquery.sticky.js?1549551316"></script>
+    <script src="/js/featherlight.min.js?1549551316"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1549551316"></script>
+    <script src="/js/highlight.pack.js?1549551316"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1549546775"></script>
-    <script src="/js/learn.js?1549546775"></script>
-    <script src="/js/hugo-learn.js?1549546775"></script>
+    <script src="/js/modernizr.custom.71422.js?1549551316"></script>
+    <script src="/js/learn.js?1549551316"></script>
+    <script src="/js/hugo-learn.js?1549551316"></script>
 
-    <link href="/mermaid/mermaid.css?1549546775" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1549546775"></script>
+    <link href="/mermaid/mermaid.css?1549551316" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1549551316"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
