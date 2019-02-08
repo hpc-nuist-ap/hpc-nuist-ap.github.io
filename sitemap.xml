@@ -31,7 +31,27 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/account/application/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/login/login-1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/login/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/overview/node-allocation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/account/accessing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/login/login-2/</loc>
   </url>
   
   <url>
@@ -39,12 +59,16 @@
   </url>
   
   <url>
-    <loc>https://hpc-nuist-ap.github.io/</loc>
-    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/tranferring/</loc>
   </url>
   
   <url>
-    <loc>https://hpc-nuist-ap.github.io/account/application/</loc>
+    <loc>https://hpc-nuist-ap.github.io/account/closing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/</loc>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>

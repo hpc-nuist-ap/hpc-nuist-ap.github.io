@@ -18,7 +18,7 @@
 	"title": "User&#39;s Guide",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 3 User\u0026rsquo;s Guide Lorem Ipsum.\n"
+	"content": " Chapter 3 User\u0026rsquo;s Guide HPC User\u0026rsquo;s Guide.\n"
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/developers-guide/",
@@ -49,11 +49,46 @@
 	"content": " Chapter 7 FAQ Lorem Ipsum.\n"
 },
 {
+	"uri": "https://hpc-nuist-ap.github.io/account/application/",
+	"title": "Application",
+	"tags": [],
+	"description": "",
+	"content": "An HPC account is required to access HPC resources. These accounts are available to AP faculty, research staff, and graduate students.\nPlease note that HPC accounts and resources are for research and teaching purposes only; use of the resources for commercial purposes is not permitted.\nIn order to apply for a new account, please fill out the access request form. Applications for accounts are reviewed by HPC management and processed within one week.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/login/login-1/",
+	"title": "GUI",
+	"tags": [],
+	"description": "graphical user interface (Win)",
+	"content": " Download MobaXterm free Installer edition\n Install MobaXterm\n Open the application: Start \u0026gt; Program Files \u0026gt; MobaXterm\n (Optional) Change the default home directory for a persistent home directory instead of the default Temp directory. Go onto Settings\u0026gt; Configuration \u0026gt; General \u0026gt; Persistent home directory. Choose a location for your home directory.\n (Optional) Change the default SSH settings to keep connection alive. Go onto Settings\u0026gt; Configuration \u0026gt; SSH \u0026gt; SSH settings \u0026gt; Check SSH keepalive.\n Create a new session: Sessions \u0026gt; New Session \u0026gt; SSH\n Remote host: \u0026lt;IP_address\u0026gt; Specify username: \u0026lt;username\u0026gt; Port: 22   "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/login/",
+	"title": "Login",
+	"tags": [],
+	"description": "",
+	"content": "If you\u0026rsquo;ve recently received a cluster account, you should have received an email with information about your account and a link to this User Guide.\nAn HPC account is required to log into and use HPC resources. To apply for an HPC account see the application form page.\nPlease choose the preferred method to continue this Login Guide:\n GUI  graphical user interface (Win)\n CLI  Command line interface (Win/Mac/Linux/Unix)\n For Windows users, it\u0026rsquo;s better to use GUI method; For other platform\u0026rsquo;s users, it\u0026rsquo;s better/necessary to use CLI method.\n Update the content among placeholders \u0026lt;\u0026gt; with your data; Dollar sign $ indicates that following content should be typed in the terminal.\n You can obtain required info from received email.\n "
+},
+{
 	"uri": "https://hpc-nuist-ap.github.io/overview/node-allocation/",
 	"title": "Node Allocation",
 	"tags": [],
 	"description": "",
 	"content": " The HPC Linux computing resource consists of a total 16 compute nodes in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.\nGeneral Computing Partitions and Nodes These are general nodes available to all HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     low node1 ~ node6 6 125 G 24 2.5 Xeon - 50 G    Private Computing Partitions and Nodes These are personal nodes available to partial HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     high node7 ~ node8 2 125 G 24 2.5 Xeon - 50 G   Addnode node9 ~ node14 6 125 G 24 2.5 Xeon - 50 G   zhao node15 ~ node16 2 125 G 24 (node15)\n28 (node16) 2.5 Xeon - 50 G    Students could have the permission of additional nodes if they\u0026rsquo;re belong to teachers mentioned below.\nhigh: Yan Yin; Addnode: Xiaoyan Ma, Chao Liu; zhao: Tianliang Zhao\n Some nodes are privately owned and are not available to all users. In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/account/accessing/",
+	"title": "Accessing",
+	"tags": [],
+	"description": "",
+	"content": "Please see the Login page for details regarding access to AP user accounts.\nFor security reasons, passward will be sent to reply_email filled in the application form.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/login/login-2/",
+	"title": "CLI",
+	"tags": [],
+	"description": "Command line interface (Win/Mac/Linux/Unix)",
+	"content": " Open terminal\n Win: Recommend MobaXterm or Git Mac/Linux/Unix: Terminal  Type in the terminal\n   $ ssh \u0026lt;username\u0026gt;@\u0026lt;IP_address\u0026gt;  Now you probably want to avoid taping this long command to connect to the platform. You can customize SSH aliases for that.\nEdit the file ~/.ssh/config (create it if it does not already exist) and adding the following entries:\n Host ap-cluster Hostname \u0026lt;IP_address\u0026gt; User \u0026lt;username\u0026gt; ServerAliveInterval 60  Now you shall be able to issue the following (simpler) command to connect to the cluster and obtain the welcome banner:\n $ ssh ap-cluster  "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/overview/resource-limits/",
@@ -63,6 +98,20 @@
 	"content": " The following information outlines the usage limits for specific HPC account types.\nCompute Hour Limits Time on the Linux computing resource is allocated in core hours.\ncore hours = nodes * cores * hours\n For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.\nConcurrent Job Limits In general, jobs will be scheduled and run on a first-come, first-served basis within a partition, provided that adequate resources are available. To maximize the use of computing resources, HPC management, in consultation with the HPC allocation committee, may restrict the number of jobs you can run concurrently from a given account.\nGeneral Partition Rules    Partition Name Maximum Jobs Queued Maximum Node Count Maximum Wall Time Maximum Jobs per User     low       high       Addnode       zhao        Disk Space    Root of home directory Quota     /pulic/home/\u0026lt;username\u0026gt; 300 G   /public1/home/\u0026lt;username\u0026gt; 1.5 T   /datadir1/\u0026lt;username\u0026gt; 2.5 T    Please check your home directory by echo $HOME and check used disk space by du -sh $HOME.\n If used space is larger than quota, you couldn\u0026rsquo;t store files anymore and need to delete some files.\n "
 },
 {
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/tranferring/",
+	"title": "Tranferring",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/account/closing/",
+	"title": "Closing",
+	"tags": [],
+	"description": "",
+	"content": "For students, all student accounts are closed and files are deleted at the deadline filled in the application form.\nFor teachers, users’ accounts are not automatically deactivated upon termination of an employee because many people change their employment status.\nThe administrator of HPC is ultimately responsible for notifying users when user accounts should be closed, and to specify the disposition of a user\u0026rsquo;s files and data.\n"
+},
+{
 	"uri": "https://hpc-nuist-ap.github.io/",
 	"title": "hpc-nuist-ap",
 	"tags": [],
@@ -70,18 +119,11 @@
 	"content": " About In recognition of the increasing importance of research computing across many disciplines, School of Atmospheric Physics (AP), NUIST has made a significant investment in developing the High Performance Computing service, as a way to grow and sustain high performance computing.\nThis service is intended to provide AP\u0026rsquo;s campus researchers with state-of-the-art, professionally-administered computing systems and ancillary infrastructure.\nMission Our mission is to deliver reliable, sustainable computing resources and services to meet the computational research demands of the AP community: address fundamental problems in research and engineering that require computation. Examples of these problems include global climate modeling, cloud modeling, weather forecast, air quality forecast, and many more.\nPeople This service is supported by a collaboration with the teachers at AP.\n Chao Liu Tianliang Zhao Xiaoyan Ma Yan Yin  Contribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it.\n"
 },
 {
-	"uri": "https://hpc-nuist-ap.github.io/account/application/",
-	"title": "Application",
-	"tags": [],
-	"description": "",
-	"content": "An HPC account is required to access HPC resources. These accounts are available to AP faculty, research staff, and graduate students.\nPlease note that HPC accounts and resources are for research and teaching purposes only; use of the resources for commercial purposes is not permitted.\nIn order to apply for a new account, please fill out the access request form. Applications for accounts are reviewed by HPC management and processed within one week.\n"
-},
-{
 	"uri": "https://hpc-nuist-ap.github.io/account/application/application-1/",
 	"title": "Application form",
 	"tags": [],
 	"description": "",
-	"content": "Chinese Name (*) \nUser Name (*) \nStudent/Teacher ID (*) \nPhone (*) \nEmail address (*) \nDeadline (for student) \nGroup (*) Choose\u0026hellip; Undergraduate Graduate Doctor Teacher  \nSupervisor Category (for student) Choose\u0026hellip; 安俊琳 鲍艳松 卜令兵 曹念文 曹 乐 陈景华 陈 倩 楚志刚 樊曙先 高志球 官 莉 郭凤霞 韩永翔 黄兴友 黄 乾 金莲姬 康汉青 李煜斌 李艳伟 刘 超 刘晓莉 陆春松 马晓燕 牛生杰 庞小兵 谭涌波 王成刚 王昊亮 王咏薇 王振会 魏 鸣 杨素英 银 燕 于兴娜 张其林 赵天良 郑有飞 朱 彬 朱 君  \nSend Test \n"
+	"content": "Chinese Name (*) \nUsername (*) \nStudent/Teacher ID (*) \nPhone (*) \nEmail address (*) \nGroup (*) Choose\u0026hellip; Undergraduate Graduate Doctor Teacher  \nSupervisor Category (for student) Choose\u0026hellip; 安俊琳 鲍艳松 卜令兵 曹念文 曹 乐 陈景华 陈 倩 楚志刚 樊曙先 高志球 官 莉 郭凤霞 韩永翔 黄兴友 黄 乾 金莲姬 康汉青 李煜斌 李艳伟 刘 超 刘晓莉 陆春松 马晓燕 牛生杰 庞小兵 谭涌波 王成刚 王昊亮 王咏薇 王振会 魏 鸣 杨素英 银 燕 于兴娜 张其林 赵天良 郑有飞 朱 彬 朱 君  \nDeadline (for student) \nSend \n"
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/categories/",

@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.54.0" />
-    <meta name="description" content="">
+    <meta name="description" content="Command line interface (Win/Mac/Linux/Unix)">
 
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Superuser&#39;s Guide :: HPC</title>
+    <title>CLI :: HPC</title>
 
     
     <link href="/css/nucleus.css?1549638647" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/superusers-guide/">
+  <body class="" data-url="/users-guide/login/login-2/">
     <nav id="sidebar" class="">
 
 
@@ -307,7 +307,7 @@
   
     
     <li data-nav-id="/users-guide/" title="User&#39;s Guide" class="dd-item 
-        
+        parent
         
         
         ">
@@ -334,7 +334,7 @@
   
     
     <li data-nav-id="/users-guide/login/" title="Login" class="dd-item 
-        
+        parent
         
         
         ">
@@ -385,8 +385,8 @@
   
     
     <li data-nav-id="/users-guide/login/login-2/" title="CLI" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/users-guide/login/login-2/">
@@ -471,8 +471,8 @@
   
     
     <li data-nav-id="/superusers-guide/" title="Superuser&#39;s Guide" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/superusers-guide/">
@@ -578,7 +578,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/Superuser%27s%20Guide/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/login/login-2/_index.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -593,6 +593,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -603,7 +605,19 @@
             
           
           
-            <a href='/'>hpc-nuist-ap</a> > Superuser's Guide
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/login/'>Login</a> > CLI
+          
+         
+          
+         
           
          
           
@@ -612,34 +626,60 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>CLI</h1>
           
 
         
 
 
+<ul>
+<li><p>Open terminal</p>
 
+<ul>
+<li>Win: Recommend <a href="https://mobaxterm.mobatek.net/">MobaXterm</a> or <a href="https://git-scm.com/downloads">Git</a></li>
+<li>Mac/Linux/Unix: Terminal</li>
+</ul></li>
 
-<h3 id="chapter-5">Chapter 5</h3>
+<li><p>Type in the terminal</p></li>
+</ul>
 
-<h1 id="superuser-s-guide">Superuser&rsquo;s Guide</h1>
+<pre><code>  $ ssh &lt;username&gt;@&lt;IP_address&gt;
+</code></pre>
 
-<p>Lorem Ipsum.</p>
+<p>Now you probably want to avoid taping this long command to connect to the platform. You can customize SSH aliases for that.</p>
+
+<p>Edit the file <code>~/.ssh/config</code> (create it if it does not already exist) and adding the following entries:</p>
+
+<pre><code>  Host ap-cluster
+      Hostname &lt;IP_address&gt;
+      User &lt;username&gt;
+      ServerAliveInterval 60
+</code></pre>
+
+<p>Now you shall be able to issue the following (simpler) command to connect to the cluster and obtain the welcome banner:</p>
+
+<pre><code>  $ ssh ap-cluster
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
         
         </div> 
         
@@ -822,20 +862,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -852,59 +878,24 @@
             
                 
                     
+                    
                 
                 
 
                     
                     
+                        
+                    
                     
 
-                    
-            
-        
                     
                         
             
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -934,6 +925,9 @@
             
         
                     
+            
+        
+                    
                         
             
             
@@ -941,6 +935,57 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -978,10 +1023,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/developers-guide/" title="Developer&#39;s Guide"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/users-guide/login/login-1/" title="GUI"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/tutorials/" title="Tutorials" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/users-guide/tranferring/" title="Tranferring" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
