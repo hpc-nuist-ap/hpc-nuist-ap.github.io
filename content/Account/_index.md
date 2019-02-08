@@ -1,13 +1,11 @@
-+++
-title = "Account"
-weight = 2
-chapter = true
-pre = "<b>2. </b>"
-
-+++
-
+---
+title: Account
+pre: "<b>2. </b>"
+weight: 2
+chapter: true
+---
 ### Chapter 2
 
 # Account
 
-Lorem Ipsum.
+HPC Account
