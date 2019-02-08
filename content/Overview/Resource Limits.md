@@ -1,5 +1,5 @@
 ---
-title: "Account Resource Limits"
+title: "Resource Limits"
 weight: 15
 ---
 
@@ -30,14 +30,14 @@ In general, jobs will be scheduled and run on a first-come, first-served basis w
 
 ### Disk Space
 
-| Root of home directory | Quota |
-| ---------------------- | ----- |
-| `/pulic/home`          | 300 G |
-| `/public1/home`        | 1.5 T |
-| `/datadir1`            | 2.5 T |
+| Root of home directory     | Quota |
+| -------------------------- | ----- |
+| `/pulic/home/<username>`   | 300 G |
+| `/public1/home/<username>` | 1.5 T |
+| `/datadir1/<username>`     | 2.5 T |
 
 {{% notice note %}}
-Please check the home directory by `echo $HOME` and check used disk space by `du -sh $HOME`.
+Please check your home directory by `echo $HOME` and check used disk space by `du -sh $HOME`.
 {{% /notice %}}
 
 {{% notice warning %}}
