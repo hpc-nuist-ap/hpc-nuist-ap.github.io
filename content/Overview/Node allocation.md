@@ -33,6 +33,6 @@ Students could have the permission of additional nodes if they're belong to teac
 
 {{% notice note %}}
 
-Some nodes are privately owned and are not available to all users. In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.
+Some nodes are privately owned and are not available to all users. <br>In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.
 
 {{% /notice %}}
