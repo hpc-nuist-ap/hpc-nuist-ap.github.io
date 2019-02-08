@@ -22,15 +22,27 @@ General Computing Partitions and Nodes These are general nodes available to all 
     </item>
     
     <item>
-      <title>Account Resource Limits</title>
-      <link>https://hpc-nuist-ap.github.io/overview/account-resource-limits/</link>
+      <title>Resource Limits</title>
+      <link>https://hpc-nuist-ap.github.io/overview/resource-limits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hpc-nuist-ap.github.io/overview/account-resource-limits/</guid>
+      <guid>https://hpc-nuist-ap.github.io/overview/resource-limits/</guid>
       <description>The following information outlines the usage limits for specific HPC account types.
 Compute Hour Limits Time on the Linux computing resource is allocated in core hours.
 core hours = nodes * cores * hours
  For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.</description>
+    </item>
+    
+    <item>
+      <title>Operating System</title>
+      <link>https://hpc-nuist-ap.github.io/overview/operating-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hpc-nuist-ap.github.io/overview/operating-system/</guid>
+      <description>Since this HPC was launched several years ago, the system and software are out-of-date.
+   Distributor Version Patch level Linux Version     SUSE Linux Enterprise Server 11 (x86_64) 11 3 3.0.76-0.11-default    Getting Help
+A number of papers, tutorials, FAQs and other documentation on SUSE can be found on the official SUSE website.
+If you have any general questions regarding the Linux distribution or software, please send an email to xinzhang1215@gmail.</description>
     </item>
     
   </channel>

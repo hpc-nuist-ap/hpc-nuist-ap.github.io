@@ -35,7 +35,7 @@
   </url>
   
   <url>
-    <loc>https://hpc-nuist-ap.github.io/overview/account-resource-limits/</loc>
+    <loc>https://hpc-nuist-ap.github.io/overview/resource-limits/</loc>
   </url>
   
   <url>
@@ -44,8 +44,20 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/account/application/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/account/application/application-1/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/overview/operating-system/</loc>
   </url>
   
   <url>

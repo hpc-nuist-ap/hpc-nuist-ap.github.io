@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Tags :: HPC</title>
+    <title>Resource Limits :: HPC</title>
 
     
     <link href="/css/nucleus.css?1549611726" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/">
+  <body class="" data-url="/overview/resource-limits/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/overview/" title="Overview" class="dd-item 
-        
+        parent
         
         
         ">
@@ -119,7 +119,7 @@
  
   
     
-      <li data-nav-id="/overview/resource-limits/" title="Resource Limits" class="dd-item ">
+      <li data-nav-id="/overview/resource-limits/" title="Resource Limits" class="dd-item active">
         <a href="/overview/resource-limits/">
         Resource Limits
         
@@ -406,6 +406,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/Overview/Resource%20Limits.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -422,7 +433,19 @@
                     
           
           
-            Tags
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>hpc-nuist-ap</a> > <a href='/overview/'>Overview</a> > Resource Limits
+          
+         
+          
+         
           
         
                  
@@ -431,7 +454,20 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#compute-hour-limits">Compute Hour Limits</a></li>
+<li><a href="#concurrent-job-limits">Concurrent Job Limits</a></li>
+<li><a href="#general-partition-rules">General Partition Rules</a></li>
+<li><a href="#disk-space">Disk Space</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -443,7 +479,7 @@
         
         <div id="body-inner">
           
-            <h1>Tags</h1>
+            <h1>Resource Limits</h1>
           
 
         
@@ -451,9 +487,111 @@
 
 
 
+<p>The following information outlines the usage limits for specific HPC account types.</p>
+
+<h3 id="compute-hour-limits">Compute Hour Limits</h3>
+
+<p>Time on the Linux computing resource is allocated in <strong>core hours</strong>.</p>
+
+<div class="notices note" ><p>core hours = nodes * cores * hours</p>
+</div>
+
+
+<p>For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.</p>
+
+<h3 id="concurrent-job-limits">Concurrent Job Limits</h3>
+
+<p>In general, jobs will be scheduled and run on a first-come, first-served basis within a partition, provided that adequate resources are available. To maximize the use of computing resources, HPC management, in consultation with the HPC allocation committee, may restrict the number of jobs you can run concurrently from a given account.</p>
+
+<h3 id="general-partition-rules">General Partition Rules</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Partition Name</th>
+<th align="center">Maximum Jobs Queued</th>
+<th align="center">Maximum Node Count</th>
+<th align="center">Maximum Wall Time</th>
+<th>Maximum Jobs per User</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">low</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="center">high</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="center">Addnode</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+
+<tr>
+<td align="center">zhao</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="disk-space">Disk Space</h3>
+
+<table>
+<thead>
+<tr>
+<th>Root of home directory</th>
+<th>Quota</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>/pulic/home/&lt;username&gt;</code></td>
+<td>300 G</td>
+</tr>
+
+<tr>
+<td><code>/public1/home/&lt;username&gt;</code></td>
+<td>1.5 T</td>
+</tr>
+
+<tr>
+<td><code>/datadir1/&lt;username&gt;</code></td>
+<td>2.5 T</td>
+</tr>
+</tbody>
+</table>
+
+<div class="notices note" ><p>Please check your home directory by <code>echo $HOME</code> and check used disk space by <code>du -sh $HOME</code>.</p>
+</div>
+
+
+<div class="notices warning" ><p>If used space is larger than quota, you couldn&rsquo;t store files anymore and need to delete some files.</p>
+</div>
+
+
+
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -486,8 +624,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -501,6 +637,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -518,6 +657,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -533,6 +673,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -689,8 +832,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/overview/node-allocation/" title="Node Allocation"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/overview/operating-system/" title="Operating System" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -721,3 +866,4 @@
 
   </body>
 </html>
+

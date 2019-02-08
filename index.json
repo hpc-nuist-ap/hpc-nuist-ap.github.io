@@ -11,7 +11,7 @@
 	"title": "Account",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 2 Account Lorem Ipsum.\n"
+	"content": " Chapter 2 Account HPC Account\n"
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/",
@@ -56,11 +56,11 @@
 	"content": " The HPC Linux computing resource consists of a total 16 compute nodes in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.\nGeneral Computing Partitions and Nodes These are general nodes available to all HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     low node1 ~ node6 6 125 G 24 2.5 Xeon - 50 G    Private Computing Partitions and Nodes These are personal nodes available to partial HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     high node7 ~ node8 2 125 G 24 2.5 Xeon - 50 G   Addnode node9 ~ node14 6 125 G 24 2.5 Xeon - 50 G   zhao node15 ~ node16 2 125 G 24 (node15)\n28 (node16) 2.5 Xeon - 50 G    Students could have the permission of additional nodes if they\u0026rsquo;re belong to teachers mentioned below.\nhigh: Yan Yin; Addnode: Xiaoyan Ma, Chao Liu; zhao: Tianliang Zhao\n Some nodes are privately owned and are not available to all users. In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.\n "
 },
 {
-	"uri": "https://hpc-nuist-ap.github.io/overview/account-resource-limits/",
-	"title": "Account Resource Limits",
+	"uri": "https://hpc-nuist-ap.github.io/overview/resource-limits/",
+	"title": "Resource Limits",
 	"tags": [],
 	"description": "",
-	"content": " The following information outlines the usage limits for specific HPC account types.\nCompute Hour Limits Time on the Linux computing resource is allocated in core hours.\ncore hours = nodes * cores * hours\n For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.\nConcurrent Job Limits In general, jobs will be scheduled and run on a first-come, first-served basis within a partition, provided that adequate resources are available. To maximize the use of computing resources, HPC management, in consultation with the HPC allocation committee, may restrict the number of jobs you can run concurrently from a given account.\nGeneral Partition Rules    Partition Name Maximum Jobs Queued Maximum Node Count Maximum Wall Time Maximum Jobs per User     low       high       Addnode       zhao        Disk Space    Root of home directory Quota     /pulic/home 300 G   /public1/home 1.5 T   /datadir1 2.5 T    Please check the home directory by echo $HOME and check used disk space by du -sh $HOME.\n If used space is larger than quota, you couldn\u0026rsquo;t store files anymore and need to delete some files.\n "
+	"content": " The following information outlines the usage limits for specific HPC account types.\nCompute Hour Limits Time on the Linux computing resource is allocated in core hours.\ncore hours = nodes * cores * hours\n For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.\nConcurrent Job Limits In general, jobs will be scheduled and run on a first-come, first-served basis within a partition, provided that adequate resources are available. To maximize the use of computing resources, HPC management, in consultation with the HPC allocation committee, may restrict the number of jobs you can run concurrently from a given account.\nGeneral Partition Rules    Partition Name Maximum Jobs Queued Maximum Node Count Maximum Wall Time Maximum Jobs per User     low       high       Addnode       zhao        Disk Space    Root of home directory Quota     /pulic/home/\u0026lt;username\u0026gt; 300 G   /public1/home/\u0026lt;username\u0026gt; 1.5 T   /datadir1/\u0026lt;username\u0026gt; 2.5 T    Please check your home directory by echo $HOME and check used disk space by du -sh $HOME.\n If used space is larger than quota, you couldn\u0026rsquo;t store files anymore and need to delete some files.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/",
@@ -70,11 +70,32 @@
 	"content": " About In recognition of the increasing importance of research computing across many disciplines, School of Atmospheric Physics (AP), NUIST has made a significant investment in developing the High Performance Computing service, as a way to grow and sustain high performance computing.\nThis service is intended to provide AP\u0026rsquo;s campus researchers with state-of-the-art, professionally-administered computing systems and ancillary infrastructure.\nMission Our mission is to deliver reliable, sustainable computing resources and services to meet the computational research demands of the AP community: address fundamental problems in research and engineering that require computation. Examples of these problems include global climate modeling, cloud modeling, weather forecast, air quality forecast, and many more.\nPeople This service is supported by a collaboration with the teachers at AP.\n Chao Liu Tianliang Zhao Xiaoyan Ma Yan Yin  Contribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it.\n"
 },
 {
+	"uri": "https://hpc-nuist-ap.github.io/account/application/",
+	"title": "Application",
+	"tags": [],
+	"description": "",
+	"content": "An HPC account is required to access HPC resources. These accounts are available to AP faculty, research staff, and graduate students.\nPlease note that HPC accounts and resources are for research and teaching purposes only; use of the resources for commercial purposes is not permitted.\nIn order to apply for a new account, please fill out the access request form. Applications for accounts are reviewed by HPC management and processed within one week.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/account/application/application-1/",
+	"title": "Application form",
+	"tags": [],
+	"description": "",
+	"content": "Chinese Name (*) \nUser Name (*) \nStudent/Teacher ID (*) \nPhone (*) \nEmail address (*) \nDeadline (for student) \nGroup (*) Choose\u0026hellip; Undergraduate Graduate Doctor Teacher  \nSupervisor Category (for student) Choose\u0026hellip; 安俊琳 鲍艳松 卜令兵 曹念文 曹 乐 陈景华 陈 倩 楚志刚 樊曙先 高志球 官 莉 郭凤霞 韩永翔 黄兴友 黄 乾 金莲姬 康汉青 李煜斌 李艳伟 刘 超 刘晓莉 陆春松 马晓燕 牛生杰 庞小兵 谭涌波 王成刚 王昊亮 王咏薇 王振会 魏 鸣 杨素英 银 燕 于兴娜 张其林 赵天良 郑有飞 朱 彬 朱 君  \nSend Test \n"
+},
+{
 	"uri": "https://hpc-nuist-ap.github.io/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/overview/operating-system/",
+	"title": "Operating System",
+	"tags": [],
+	"description": "",
+	"content": "Since this HPC was launched several years ago, the system and software are out-of-date.\n   Distributor Version Patch level Linux Version     SUSE Linux Enterprise Server 11 (x86_64) 11 3 3.0.76-0.11-default    Getting Help\nA number of papers, tutorials, FAQs and other documentation on SUSE can be found on the official SUSE website.\nIf you have any general questions regarding the Linux distribution or software, please send an email to xinzhang1215@gmail.com.\n"
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/tags/",
