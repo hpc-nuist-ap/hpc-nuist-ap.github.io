@@ -10,7 +10,7 @@ title: "Application form"
   </div>
 
   <div class="form-group">
-    <label for="name">User Name (*)</label>
+    <label for="name">Username (*)</label>
       <input type="text" name="name" class="form-control" placeholder="Created HPC username" required>
   </div>
 
@@ -18,20 +18,15 @@ title: "Application form"
     <label for="name">Student/Teacher ID (*)</label>
       <input type="text" name="ID" class="form-control" placeholder="Your ID" required>
   </div>
-    
+
   <div class="form-group">
     <label for="name">Phone (*)</label>
-      <input type="text" name="Phone" class="form-control" placeholder="Phone number" required>
-  </div>
-    
-  <div class="form-group">
-      <label for="_replyto">Email address (*)</label>
-      <input type="email" name="_replyto" class="form-control" placeholder="Your email" required>
+      <input type="text" name="Phone" class="form-control" placeholder="Your phone number" required>
   </div>
 
   <div class="form-group">
-    <label for="date">Deadline (for student)</label>
-    <input type="date" min="2019-01-01" max="2050-01-01" step="7">
+      <label for="_replyto">Email address (*)</label>
+      <input type="email" name="_replyto" class="form-control" placeholder="Your email" required>
   </div>
 
   <div class="form-group">
@@ -44,11 +39,12 @@ title: "Application form"
         <option>Teacher</option>
       </select>
   </div>
-        
+
   <div class="form-group">
       <label for="Supervisor">Supervisor Category (for student)</label>
       <select name="Supervisor" class="form-control">
         <option value="">Choose...</option>
+        <!-- Sorted by initials-->
         <option>安俊琳</option>
         <option>鲍艳松</option>
         <option>卜令兵</option>
@@ -91,5 +87,10 @@ title: "Application form"
       </select>
   </div>
 
-  <button type="submit">Send Test</button>
+  <div class="form-group">
+    <label for="date">Deadline (for student)</label>
+    <input type="date" min="2019-01-01" max="2050-01-01" step="7">
+  </div>
+  
+  <button type="submit">Send</button>
   </form>
