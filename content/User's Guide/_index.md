@@ -10,4 +10,4 @@ pre = "<b>3. </b>"
 
 # User's Guide
 
-HPC User's Guide. 
+HPC User's Guide
