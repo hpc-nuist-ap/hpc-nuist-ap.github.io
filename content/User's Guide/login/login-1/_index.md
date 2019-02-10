@@ -4,7 +4,7 @@ description: "graphical user interface (Win)"
 weight: 10
 ---
 
-- Download [MobaXterm free Installer edition](https://mobaxterm.mobatek.net/)
+- Download [MobaXterm free Installer edition (Win)](https://mobaxterm.mobatek.net/)
 
   
 
@@ -26,6 +26,8 @@ weight: 10
 
 - Create a new session: **Sessions** > **New Session** > **SSH**
 
-  - Remote host: `<IP_address>`
-  - Specify username: `<username>`
+  ```
+  - Remote host: <IP_address>
+  - Specify username: <username>
   - Port: 22
+  ```

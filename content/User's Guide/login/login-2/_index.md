@@ -1,12 +1,12 @@
 ---
 title: "CLI"
-description: "Command line interface (Win/Mac/Linux/Unix)"
+description: "Command line interface (Windows / Linux / OS X / Unix)"
 weight: 15
 ---
 
 - Open terminal
 
-  - Win: Recommend [MobaXterm](https://mobaxterm.mobatek.net/) or [Git](https://git-scm.com/downloads)
+  - Win: [MobaXterm](https://mobaxterm.mobatek.net/) or [Git](https://git-scm.com/downloads)
   - Mac/Linux/Unix: Terminal
 
 - Type in the terminal
