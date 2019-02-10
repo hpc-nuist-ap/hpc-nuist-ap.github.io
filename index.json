@@ -18,7 +18,7 @@
 	"title": "User&#39;s Guide",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 3 User\u0026rsquo;s Guide HPC User\u0026rsquo;s Guide.\n"
+	"content": " Chapter 3 User\u0026rsquo;s Guide HPC User\u0026rsquo;s Guide\n"
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/developers-guide/",
@@ -60,14 +60,21 @@
 	"title": "GUI",
 	"tags": [],
 	"description": "graphical user interface (Win)",
-	"content": " Download MobaXterm free Installer edition\n Install MobaXterm\n Open the application: Start \u0026gt; Program Files \u0026gt; MobaXterm\n (Optional) Change the default home directory for a persistent home directory instead of the default Temp directory. Go onto Settings\u0026gt; Configuration \u0026gt; General \u0026gt; Persistent home directory. Choose a location for your home directory.\n (Optional) Change the default SSH settings to keep connection alive. Go onto Settings\u0026gt; Configuration \u0026gt; SSH \u0026gt; SSH settings \u0026gt; Check SSH keepalive.\n Create a new session: Sessions \u0026gt; New Session \u0026gt; SSH\n Remote host: \u0026lt;IP_address\u0026gt; Specify username: \u0026lt;username\u0026gt; Port: 22   "
+	"content": " Download MobaXterm free Installer edition (Win)\n Install MobaXterm\n Open the application: Start \u0026gt; Program Files \u0026gt; MobaXterm\n (Optional) Change the default home directory for a persistent home directory instead of the default Temp directory. Go onto Settings\u0026gt; Configuration \u0026gt; General \u0026gt; Persistent home directory. Choose a location for your home directory.\n (Optional) Change the default SSH settings to keep connection alive. Go onto Settings\u0026gt; Configuration \u0026gt; SSH \u0026gt; SSH settings \u0026gt; Check SSH keepalive.\n Create a new session: Sessions \u0026gt; New Session \u0026gt; SSH\n   - Remote host: \u0026lt;IP_address\u0026gt; - Specify username: \u0026lt;username\u0026gt; - Port: 22  "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/transferring/transferring-1/",
+	"title": "GUI",
+	"tags": [],
+	"description": "graphical user interface (Windows / Linux / OS X / Unix)",
+	"content": " MobaXterm (Win) If you are on Windows, you can directly use MobaXterm to transfer files.\nConnect to your session. On the left panel you should see an SFTP panel opened.\n You have just to drag and drop your files to this panel to transfer files to the cluster.\n To retrieve a file from the cluster, you can right click on it and choose the Download option.\n  Please refers to MobaXterm documentation for more informations on the available features.\nFileZilla (Windows / Linux / OS X / Unix)  Download the FileZilla client application from filezilla-project.org and install it.\n First we need to add our session:\n Start the application.\n click on the Site Manager button on the top left or select Site Manager from the File menu.\n Click on the New Site button and enter/select the following:\n  - Host: \u0026lt;IP_address\u0026gt; - Port: 22 - Protocol: SFTP - SSH File Transfer Protocol - Logon Type: Normal - User: \u0026lt;username\u0026gt; - Password : \u0026lt;passward\u0026gt;   Click on the Connect button.  On the very top, beneath the quick connect, you see the message log. Below you have the directory tree and the contents of the current directory for you local computer on the left and the remote location on the right.\n To transfer a file, simply drag and drop it from the directory listing on the left side to destination directory on the right (to transfer from local to remote) or vice versa (to transfer from remote to local). You can also select a file by left clicking on it once and then right click on it to get the context menu and select \u0026ldquo;Upload\u0026rdquo; or \u0026ldquo;Download\u0026rdquo; to transfer it.\n When you click the fifth icon on the top with the two green arrows to toggle the transfer queue, you can see the status of ongoing transfers on the very bottom of the window.\n  If you can\u0026rsquo;t connect to the cluster with this error: Error: Server unexpectedly closed network connection Error: Could not connect to server Please allow FileZilla in Firewall. Go to Windows Defender Firewall \u0026ndash;\u0026gt; Allowed Apps\u0026ndash;\u0026gt; Allow another app and then add FileZilla (filezilla.exe and fzsftp.exe) from where you install it.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/login/",
 	"title": "Login",
 	"tags": [],
 	"description": "",
-	"content": "If you\u0026rsquo;ve recently received a cluster account, you should have received an email with information about your account and a link to this User Guide.\nAn HPC account is required to log into and use HPC resources. To apply for an HPC account see the application form page.\nPlease choose the preferred method to continue this Login Guide:\n GUI  graphical user interface (Win)\n CLI  Command line interface (Win/Mac/Linux/Unix)\n For Windows users, it\u0026rsquo;s better to use GUI method; For other platform\u0026rsquo;s users, it\u0026rsquo;s better/necessary to use CLI method.\n Update the content among placeholders \u0026lt;\u0026gt; with your data; Dollar sign $ indicates that following content should be typed in the terminal.\n You can obtain required info from received email.\n "
+	"content": "If you\u0026rsquo;ve recently received a cluster account, you should have received an email with information about your account and a link to this User Guide.\nAn HPC account is required to log into and use HPC resources. To apply for an HPC account see the application form page.\nPlease choose the preferred method to continue this Login Guide:\n GUI  graphical user interface (Win)\n CLI  Command line interface (Windows / Linux / OS X / Unix)\n For Windows users, it\u0026rsquo;s better to use GUI method; For other platform\u0026rsquo;s users, it\u0026rsquo;s better/necessary to use CLI method.\n Update the content among placeholders \u0026lt;\u0026gt; with your data; Dollar sign $ indicates that following content should be typed in the terminal.\n You can obtain required info from received email.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/overview/node-allocation/",
@@ -87,8 +94,15 @@
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/login/login-2/",
 	"title": "CLI",
 	"tags": [],
-	"description": "Command line interface (Win/Mac/Linux/Unix)",
-	"content": " Open terminal\n Win: Recommend MobaXterm or Git Mac/Linux/Unix: Terminal  Type in the terminal\n   $ ssh \u0026lt;username\u0026gt;@\u0026lt;IP_address\u0026gt;  Now you probably want to avoid taping this long command to connect to the platform. You can customize SSH aliases for that.\nEdit the file ~/.ssh/config (create it if it does not already exist) and adding the following entries:\n Host ap-cluster Hostname \u0026lt;IP_address\u0026gt; User \u0026lt;username\u0026gt; ServerAliveInterval 60  Now you shall be able to issue the following (simpler) command to connect to the cluster and obtain the welcome banner:\n $ ssh ap-cluster  "
+	"description": "Command line interface (Windows / Linux / OS X / Unix)",
+	"content": " Open terminal\n Win: MobaXterm or Git Mac/Linux/Unix: Terminal  Type in the terminal\n   $ ssh \u0026lt;username\u0026gt;@\u0026lt;IP_address\u0026gt;  Now you probably want to avoid taping this long command to connect to the platform. You can customize SSH aliases for that.\nEdit the file ~/.ssh/config (create it if it does not already exist) and adding the following entries:\n Host ap-cluster Hostname \u0026lt;IP_address\u0026gt; User \u0026lt;username\u0026gt; ServerAliveInterval 60  Now you shall be able to issue the following (simpler) command to connect to the cluster and obtain the welcome banner:\n $ ssh ap-cluster  "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/transferring/transferring-2/",
+	"title": "CLI",
+	"tags": [],
+	"description": "Command line interface (Windows / Linux / OS X / Unix)",
+	"content": "The two most common tools you can use for data transfers over SSH:\n scp: for the full transfer of files and directories (only works fine for single files or directories of small/trivial size)\n rsync: a software application which synchronizes files and directories from one location to another while minimizing data transfer as only the outdated or inexistent elements are transferred (practically required for lengthy complex transfers, which are more likely to be interrupted in the middle).\n  Of both, normally the second approach should be preferred, as more generic; note that, both ensure a secure transfer of the data, within an encrypted tunnel.\nPlease check these two excellent tutorials: scp_tutorial and rsync_tutorial.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/overview/resource-limits/",
@@ -98,11 +112,11 @@
 	"content": " The following information outlines the usage limits for specific HPC account types.\nCompute Hour Limits Time on the Linux computing resource is allocated in core hours.\ncore hours = nodes * cores * hours\n For example, the use of 1 nodes with 24 CPU cores for three hours is counted as 72 core hours. Most of the HPC compute nodes have 24 CPU cores so if you are unsure of how many cores you are using per node, 24 is a good estimate.\nConcurrent Job Limits In general, jobs will be scheduled and run on a first-come, first-served basis within a partition, provided that adequate resources are available. To maximize the use of computing resources, HPC management, in consultation with the HPC allocation committee, may restrict the number of jobs you can run concurrently from a given account.\nGeneral Partition Rules    Partition Name Maximum Jobs Queued Maximum Node Count Maximum Wall Time Maximum Jobs per User     low       high       Addnode       zhao        Disk Space    Root of home directory Quota     /pulic/home/\u0026lt;username\u0026gt; 300 G   /public1/home/\u0026lt;username\u0026gt; 1.5 T   /datadir1/\u0026lt;username\u0026gt; 2.5 T    Please check your home directory by echo $HOME and check used disk space by du -sh $HOME.\n If used space is larger than quota, you couldn\u0026rsquo;t store files anymore and need to delete some files.\n "
 },
 {
-	"uri": "https://hpc-nuist-ap.github.io/users-guide/tranferring/",
-	"title": "Tranferring",
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/transferring/",
+	"title": "Transferring",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Directories are shared among the nodes of the cluster:\n every file/directory pushed or created on the front-end is available on the computing nodes\n every file/directory pushed or created on the computing nodes is available on the front-end\n  Please choose the preferred method to continue this Login Guide:\n GUI  graphical user interface (Windows / Linux / OS X / Unix)\n CLI  Command line interface (Windows / Linux / OS X / Unix)\n CLI method is more stable.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/account/closing/",
@@ -110,6 +124,13 @@
 	"tags": [],
 	"description": "",
 	"content": "For students, all student accounts are closed and files are deleted at the deadline filled in the application form.\nFor teachers, users’ accounts are not automatically deactivated upon termination of an employee because many people change their employment status.\nThe administrator of HPC is ultimately responsible for notifying users when user accounts should be closed, and to specify the disposition of a user\u0026rsquo;s files and data.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/environment-variables/",
+	"title": "Environment Variables",
+	"tags": [],
+	"description": "",
+	"content": "A brief introduction found on Medium:\n Akshit Grover:\nEveryone knows what are variables, Data stored somewhere in memory when referenced by some indicator (variable name).\nEnvironment variables are none other than variables, It’s just that data stored in that variable is what describes environment behaviour.\nSo now I think it is clear that why environment variables are so useful and interesting, One can control environments behaviour just by setting, altering, deleting several environment variables.\nBefore we dive into playing with ENVs (environment variables) it is important to understand where to set them.\nAll the play with ENVs will be done in a beautiful place known as the command line. One can access command line using Terminal.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/",

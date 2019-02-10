@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.54.0" />
-    <meta name="description" content="">
+    <meta name="description" content="Command line interface (Windows / Linux / OS X / Unix)">
 
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Account :: HPC</title>
+    <title>CLI :: HPC</title>
 
     
     <link href="/css/nucleus.css?1549810557" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/account/">
+  <body class="" data-url="/users-guide/transferring/transferring-2/">
     <nav id="sidebar" class="">
 
 
@@ -165,8 +165,8 @@
   
     
     <li data-nav-id="/account/" title="Account" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/account/">
@@ -307,7 +307,7 @@
   
     
     <li data-nav-id="/users-guide/" title="User&#39;s Guide" class="dd-item 
-        
+        parent
         
         
         ">
@@ -418,7 +418,7 @@
   
     
     <li data-nav-id="/users-guide/transferring/" title="Transferring" class="dd-item 
-        
+        parent
         
         
         ">
@@ -469,8 +469,8 @@
   
     
     <li data-nav-id="/users-guide/transferring/transferring-2/" title="CLI" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/users-guide/transferring/transferring-2/">
@@ -662,7 +662,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/Account/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/transferring/transferring-2/_index.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -677,6 +677,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -687,7 +689,19 @@
             
           
           
-            <a href='/'>hpc-nuist-ap</a> > Account
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/transferring/'>Transferring</a> > CLI
+          
+         
+          
+         
           
          
           
@@ -696,34 +710,45 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>CLI</h1>
           
 
         
 
 
+<p>The two most common tools you can use for data transfers over SSH:</p>
 
+<ul>
+<li><p><code>scp</code>: for the full transfer of files and directories (only works fine for single files or directories of small/trivial size)</p></li>
 
-<h3 id="chapter-2">Chapter 2</h3>
+<li><p><code>rsync</code>: a software application which synchronizes files and directories from one location to another while minimizing data transfer as only the outdated or inexistent elements are transferred (practically required for lengthy complex transfers, which are more likely to be interrupted in the middle).</p></li>
+</ul>
 
-<h1 id="account">Account</h1>
+<p>Of both, normally the second approach should be preferred, as more generic; note that, both ensure a secure transfer of the data, within an encrypted tunnel.</p>
 
-<p>HPC Account</p>
+<div class="notices note" ><p>Please check these two excellent tutorials: <a href="https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/">scp_tutorial</a> and <a href="https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/">rsync_tutorial</a>.</p>
+</div>
+
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
         
         </div> 
         
@@ -822,7 +847,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -837,9 +861,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -910,20 +931,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -940,40 +947,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1024,6 +999,64 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1112,10 +1145,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/overview/operating-system/" title="Operating System"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/users-guide/transferring/transferring-1/" title="GUI"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/account/application/" title="Application" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/users-guide/environment-variables/" title="Environment Variables" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

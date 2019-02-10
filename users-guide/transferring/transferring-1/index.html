@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.54.0" />
-    <meta name="description" content="">
+    <meta name="description" content="graphical user interface (Windows / Linux / OS X / Unix)">
 
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Account :: HPC</title>
+    <title>GUI :: HPC</title>
 
     
     <link href="/css/nucleus.css?1549810557" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/account/">
+  <body class="" data-url="/users-guide/transferring/transferring-1/">
     <nav id="sidebar" class="">
 
 
@@ -165,8 +165,8 @@
   
     
     <li data-nav-id="/account/" title="Account" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/account/">
@@ -307,7 +307,7 @@
   
     
     <li data-nav-id="/users-guide/" title="User&#39;s Guide" class="dd-item 
-        
+        parent
         
         
         ">
@@ -418,7 +418,7 @@
   
     
     <li data-nav-id="/users-guide/transferring/" title="Transferring" class="dd-item 
-        
+        parent
         
         
         ">
@@ -445,8 +445,8 @@
   
     
     <li data-nav-id="/users-guide/transferring/transferring-1/" title="GUI" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/users-guide/transferring/transferring-1/">
@@ -662,7 +662,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/Account/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/transferring/transferring-1/_index.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -677,6 +677,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -687,7 +689,19 @@
             
           
           
-            <a href='/'>hpc-nuist-ap</a> > Account
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/transferring/'>Transferring</a> > GUI
+          
+         
+          
+         
           
          
           
@@ -696,14 +710,32 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#mobaxterm-win">MobaXterm (Win)</a></li>
+<li><a href="#filezilla-windows-linux-os-x-unix">FileZilla (Windows / Linux / OS X / Unix)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>GUI</h1>
           
 
         
@@ -711,19 +743,63 @@
 
 
 
-<h3 id="chapter-2">Chapter 2</h3>
+<h3 id="mobaxterm-win">MobaXterm (Win)</h3>
 
-<h1 id="account">Account</h1>
+<p>If you are on Windows, you can directly use <a href="https://mobaxterm.mobatek.net/">MobaXterm</a> to transfer files.</p>
 
-<p>HPC Account</p>
+<p>Connect to your session. On the left panel you should see an <strong>SFTP</strong> panel opened.</p>
+
+<ul>
+<li><p>You have just to drag and drop your files to this panel to <strong>transfer</strong> files to the cluster.</p></li>
+
+<li><p>To retrieve a file from the cluster, you can right click on it and choose the <strong>Download</strong> option.</p></li>
+</ul>
+
+<p>Please refers to <a href="https://mobaxterm.mobatek.net/documentation.html">MobaXterm documentation</a> for more informations on the available features.</p>
+
+<h3 id="filezilla-windows-linux-os-x-unix">FileZilla (Windows / Linux / OS X / Unix)</h3>
+
+<ul>
+<li><p>Download the FileZilla client application from <a href="https://filezilla-project.org/download.php?type=client">filezilla-project.org</a> and install it.</p></li>
+
+<li><p>First we need to add our session:</p>
+
+<ul>
+<li><p>Start the application.</p></li>
+
+<li><p>click on the <strong>Site Manager</strong> button on the top left or select <strong>Site Manager</strong> from the <strong>File</strong> menu.</p></li>
+
+<li><p>Click on the <strong>New Site</strong> button and enter/select the following:</p></li>
+</ul>
+
+<pre><code>- Host: &lt;IP_address&gt;
+- Port: 22
+- Protocol: SFTP - SSH File Transfer Protocol
+- Logon Type: Normal
+- User: &lt;username&gt;
+- Password : &lt;passward&gt;
+</code></pre>
+
+<ul>
+<li>Click on the <code>Connect</code> button.</li>
+</ul></li>
+
+<li><p>On the very top, beneath the quick connect, you see the <strong>message log</strong>. Below you have the directory tree and the contents of the current directory for you local computer on the left and the remote location on the right.</p></li>
+
+<li><p>To <strong>transfer a file</strong>, simply drag and drop it from the directory listing on the left side to destination directory on the right (to transfer from local to remote) or vice versa (to transfer from remote to local). You can also select a file by left clicking on it once and then right click on it to get the context menu and select &ldquo;Upload&rdquo; or &ldquo;Download&rdquo; to transfer it.</p></li>
+
+<li><p>When you click the fifth icon on the top with the two green arrows to toggle the transfer queue, you can see <strong>the status of ongoing transfers</strong> on the very bottom of the window.</p></li>
+</ul>
+
+<div class="notices note" ><p>If you can&rsquo;t connect to the cluster with this error: <code>Error:    Server unexpectedly closed network connection Error:    Could not connect to server</code> <br><br/>Please <strong>allow FileZilla in Firewall</strong>. Go to Windows Defender Firewall &ndash;&gt; Allowed Apps&ndash;&gt; Allow another app and then add FileZilla (<strong>filezilla.exe and fzsftp.exe</strong>) from where you install it.</p>
+</div>
+
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
         
         </div> 
         
@@ -822,7 +898,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -837,9 +912,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -910,20 +982,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -940,40 +998,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -1005,6 +1031,61 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1112,10 +1193,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/overview/operating-system/" title="Operating System"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/users-guide/transferring/" title="Transferring"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/account/application/" title="Application" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/users-guide/transferring/transferring-2/" title="CLI" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

@@ -39,6 +39,10 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/transferring/transferring-1/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/users-guide/login/</loc>
   </url>
   
@@ -55,15 +59,23 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/transferring/transferring-2/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/overview/resource-limits/</loc>
   </url>
   
   <url>
-    <loc>https://hpc-nuist-ap.github.io/users-guide/tranferring/</loc>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/transferring/</loc>
   </url>
   
   <url>
     <loc>https://hpc-nuist-ap.github.io/account/closing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/environment-variables/</loc>
   </url>
   
   <url>
