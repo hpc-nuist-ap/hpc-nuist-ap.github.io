@@ -2,7 +2,7 @@
 title: "Application form"
 ---
 
-  <form action="https://formspree.io/xinzhang1215@gmail.com" method="POST"> 
+  <form method="post" action="https://briskforms.com/go/1580dee51e30e05068e0da762b6f8803">
 
   <div class="form-group">
     <label for="name">Chinese Name (*)</label>
