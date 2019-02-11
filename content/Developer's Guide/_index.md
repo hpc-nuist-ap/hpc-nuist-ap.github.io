@@ -1,13 +1,13 @@
 +++
 title = "Developer's Guide"
-weight = 4
+weight = 7
 chapter = true
-pre = "<b>4. </b>"
+pre = "<b>7. </b>"
 
 +++
 
-### Chapter 4
+### Chapter 7
 
 # Developer's Guide
 
-Lorem Ipsum.
+Guide for Web Developers

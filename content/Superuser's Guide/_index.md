@@ -1,13 +1,13 @@
 +++
 title = "Superuser's Guide"
-weight = 5
+weight = 6
 chapter = true
-pre = "<b>5. </b>"
+pre = "<b>6. </b>"
 
 +++
 
-### Chapter 5
+### Chapter 6
 
 # Superuser's Guide
 
-Lorem Ipsum.
+Guide for Root

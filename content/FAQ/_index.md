@@ -1,12 +1,12 @@
 +++
 title = "FAQ"
-weight = 7
+weight = 5
 chapter = true
-pre = "<b>7. </b>"
+pre = "<b>5. </b>"
 +++
 
-### Chapter 7
+### Chapter 5
 
 # FAQ
 
-Lorem Ipsum.
+Frequently asked questions
