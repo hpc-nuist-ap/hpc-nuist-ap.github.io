@@ -252,13 +252,6 @@
 	"content": ""
 },
 {
-	"uri": "https://hpc-nuist-ap.github.io/credits/",
-	"title": "Credits",
-	"tags": [],
-	"description": "",
-	"content": " Contributors Thanks to them  for making hpc-nuist-ap better!\n.ghContributors{ display:flex; flex-flow: wrap; align-content: flex-start } .ghContributors  div{ width: 50% ; display: inline-flex; margin-bottom: 5px; } .ghContributors  div label{ padding-left: 4px ; } .ghContributors  div span{ font-size: x-small; padding-left: 4px ; }   @zxdawn 48 commits   "
-},
-{
 	"uri": "https://hpc-nuist-ap.github.io/overview/operating-system/",
 	"title": "Operating System",
 	"tags": [],
