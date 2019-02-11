@@ -12,6 +12,11 @@ home = [ "HTML", "RSS", "JSON"]
 themeVariant = "blue"
 editURL = "https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/"
 
+[params.busuanzi]
+enable = true
+siteUV = true
+sitePV = true
+
 [[menu.shortcuts]] 
 name = "<i class='fab fa-github'></i> Github repo"
 identifier = "ds"
