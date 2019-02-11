@@ -2,7 +2,7 @@
 title: "Application form"
 ---
 
-  <form action="http://formspree.io/xinzhang1215@gmail.com" method="POST"> 
+  <form action="http://formspree.io/363910399@qq.com" method="POST"> 
 
   <div class="form-group">
     <label for="name">Chinese Name (*)</label>
