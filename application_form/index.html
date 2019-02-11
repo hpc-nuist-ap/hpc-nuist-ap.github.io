@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Python :: HPC</title>
+    <title>Sent Success :: HPC</title>
 
     
     <link href="/css/nucleus.css?1549888706" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/users-guide/softwares/load/load-2/">
+  <body class="" data-url="/application_form/">
     <nav id="sidebar" class="">
 
 
@@ -307,7 +307,7 @@
   
     
     <li data-nav-id="/users-guide/" title="User&#39;s Guide" class="dd-item 
-        parent
+        
         
         
         ">
@@ -634,7 +634,7 @@
   
     
     <li data-nav-id="/users-guide/softwares/" title="Softwares" class="dd-item 
-        parent
+        
         
         
         ">
@@ -685,7 +685,7 @@
   
     
     <li data-nav-id="/users-guide/softwares/load/" title="Load" class="dd-item 
-        parent
+        
         
         
         ">
@@ -736,8 +736,8 @@
   
     
     <li data-nav-id="/users-guide/softwares/load/load-2/" title="Python" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/users-guide/softwares/load/load-2/">
@@ -1044,7 +1044,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/softwares/load/load-2/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/application_form.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1059,8 +1059,6 @@
                         </a>
                     </span>
                   
-                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
-                  
                   <span class="links">
                  
                  
@@ -1071,25 +1069,7 @@
             
           
           
-            
-            
-          
-          
-            
-            
-          
-          
-            
-            
-          
-          
-            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/softwares/'>Softwares</a> > <a href='/users-guide/softwares/load/'>Load</a> > Python
-          
-         
-          
-         
-          
-         
+            <a href='/'>hpc-nuist-ap</a> > Sent Success
           
          
           
@@ -1098,25 +1078,6 @@
                   </span>
                 </div>
                 
-                    <div class="progress">
-    <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#use-installed-one">Use installed one</a></li>
-<li><a href="#create-own-one">Create own one</a></li>
-<li><a href="#set-mirror">Set mirror</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-    </div>
-</div>
-
-                
               </div>
             </div>
             
@@ -1124,96 +1085,28 @@
         
         <div id="body-inner">
           
-            <h1>Python</h1>
+            <h1>Sent Success</h1>
           
 
         
 
 
+<div style="font-size: 24px; text-align:center">
+  <span style="color: DodgerBlue;">
+  <i class="fas fa-check-circle fa-10x"></i>
+  </span>
+</div>
 
-
-<p>Python&rsquo;s version is 2.6.8 by default. For scientific purpose, it&rsquo;s lack of many packages and out-of-date version.</p>
-
-<p>We&rsquo;ve created our <strong>own Anaconda mirror and two environments (python2.7 and python3.6)</strong>.</p>
-
-<p>There&rsquo;re two options for you: use installed environment and create your own python environment.</p>
-
-<h3 id="use-installed-one">Use installed one</h3>
-
-<ul>
-<li><strong>Python2.7</strong></li>
-</ul>
-
-<p>add these lines to<code>~/.profile</code>:</p>
-
-<pre><code>  export PATH=/public/software/anaconda/anaconda3/bin:$PATH
-  . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
-  conda activate python27
-</code></pre>
-
-<ul>
-<li><strong>Python3.6</strong></li>
-</ul>
-
-<p>add these lines to<code>~/.profile</code>:</p>
-
-<pre><code>  export PATH=/public/software/anaconda/anaconda3/bin:$PATH
-  . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
-  conda activate python36
-</code></pre>
-
-<ul>
-<li><strong>Check installed packages</strong></li>
-</ul>
-
-<pre><code>  $ conda list
-  # If you need more packages, plead add to the end of `/public/software/anaconda/requirements.txt`.
-</code></pre>
-
-<h3 id="create-own-one">Create own one</h3>
-
-<p>The mirror of Anaconda is located at these directory:</p>
-
-<pre><code>/public/software/anaconda/archive
-/public/software/anaconda/pkgs
-</code></pre>
-
-<p>You can just run <code>/public/software/anaconda/archive/&lt;Anaconda****.sh&gt;</code> to install at your own directory.</p>
-
-<h3 id="set-mirror">Set mirror</h3>
-
-<p>If you choose to install your own anaconda, you should set mirror to speed up installing packages. Choose preferred method below and edit <code>~/.condarc</code>as same as example:</p>
-
-<ul>
-<li>Local mirror (fastest, updated once a month)</li>
-</ul>
-
-<pre><code>  allow_other_channels : false
-  channel_alias: file://public/software/anaconda/pkgs
-  channels:
-    - free
-    - main
-    - pro
-    - conda-forge
-  offline: true
-</code></pre>
-
-<ul>
-<li>Tsinghua mirror (slow, lastest)</li>
-</ul>
-
-<pre><code>  channels:
-    - defaults
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-  show_channel_urls: true
-</code></pre>
+<p align="center" style="font-size:20px">
+  Enjoy your HPC account,
+  Check <a href="https://hpc-nuist-ap.github.io/account/accessing/">accessing methods now</a>!
+</p>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -1397,7 +1290,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1412,9 +1304,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1598,7 +1487,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1613,9 +1501,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1633,7 +1518,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1648,9 +1532,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1667,7 +1548,6 @@
             
             
                 
-                    
                     
                 
                 
@@ -1687,9 +1567,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1847,10 +1724,8 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/users-guide/softwares/load/load-1/" title="Matlab"> <i class="fa fa-chevron-left"></i></a>
 		
-		
-			<a class="nav nav-next" href="/users-guide/softwares/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/overview/" title="Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1881,3 +1756,4 @@
 
   </body>
 </html>
+

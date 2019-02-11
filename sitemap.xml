@@ -153,6 +153,10 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/application_form/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/tags/</loc>
     <priority>0</priority>
   </url>
