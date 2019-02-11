@@ -21,32 +21,39 @@
 	"content": " Chapter 3 User\u0026rsquo;s Guide HPC User\u0026rsquo;s Guide\n"
 },
 {
-	"uri": "https://hpc-nuist-ap.github.io/developers-guide/",
-	"title": "Developer&#39;s Guide",
-	"tags": [],
-	"description": "",
-	"content": " Chapter 4 Developer\u0026rsquo;s Guide Lorem Ipsum.\n"
-},
-{
-	"uri": "https://hpc-nuist-ap.github.io/superusers-guide/",
-	"title": "Superuser&#39;s Guide",
-	"tags": [],
-	"description": "",
-	"content": " Chapter 5 Superuser\u0026rsquo;s Guide Lorem Ipsum.\n"
-},
-{
 	"uri": "https://hpc-nuist-ap.github.io/tutorials/",
 	"title": "Tutorials",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 6 Tutorials Lorem Ipsum.\n"
+	"content": "Some useful and excellent tutorials/books/links. This is part of Xin Zhang\u0026rsquo;s repository Marked-Tutorials.\n Python (Basic)\n ThinkPython2 Learning Scientific Programming with Python Python for scientists Python courses for the scientific researcher  Python (Advanced)\n Scipy 2018 scikit-learn tutorial Introduction to Machine Learning for Coders Practical Deep Learning For Coders Python Machine Learning (2nd edition) Neural Networks and Deep Learning Introduction to Artificial Neural Networks and Deep Learning Deep Learning papers reading roadmap STAT 479: Machine Learning (FS 2018) 100 Days of ML Coding practicalAI  Useful Python library\n xarray PyTables xESMF cmaps salem iris geopandas geoplot geopy pyresample pyecharts Plotly geoviews pysheds python-matlab-bridge  Fortran\n Introduction to Modern Fortran for the Earth System Sciences Fortran for Scientists \u0026amp; Engineers  Julia\n Introducing Julia learning  Languages\n Learn X in Y minutes  Shell\n shell-novice  Docker\n Docker Practice Docker Cheat Sheet Numerical weather prediction (NWP) containers glmtools-docker  Git\n git-novice learnGitBranching Git Cheat Sheet git tips  Coding/Learning Group\n studyGroup Coding Club  LaTeX\n Beginner\u0026rsquo;s Tutorial A simple guide to LaTeX  Math\n Applied Numerical Computing  Atmosphere\n Atmospheric Science (2nd Edition) An Introduction to Dynamic Meteorology (5th Edition) A First Course in Atmospheric Thermodynamics A Short Course in Cloud Physics (3rd Edition) Microphysics of Clouds and Precipitation Physics and Chemistry of Clouds Physical Processes in Clouds and Cloud Modeling Severe Convective Storms and Tornadoes The Remote Sensing of Tropospheric Composition from Space Differential Optical Absorption Spectroscopy Inverse Methods for Atmospheric Sounding  Atmospheric Model\n Numerical Weather and Climate Prediction GEOSChem-python-tutorial PyGEOMET PyBox Parcel Trajectories for CM1 and WRF output InMAP  Satellite\n Monitoring Atmospheric Composition (Online course) VISIT Awesome Satellite Imagery Datasets PythonFromSpace satpy ccplot pyModis   "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/faq/",
 	"title": "FAQ",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 7 FAQ Lorem Ipsum.\n"
+	"content": " Chapter 5 FAQ Frequently asked questions\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/superusers-guide/",
+	"title": "Superuser&#39;s Guide",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 6 Superuser\u0026rsquo;s Guide Guide for Root\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/developers-guide/",
+	"title": "Developer&#39;s Guide",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 7 Developer\u0026rsquo;s Guide Guide for Web Developers\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/logs/",
+	"title": "Logs/Events",
+	"tags": [],
+	"description": "",
+	"content": "2019/02/11: Make this website public;\n2018/12/13: Intro: Tutorial of HPC and Shell (hpc\u0026amp;shell.ppt (4568 kb));\n"
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/account/application/",
@@ -54,6 +61,13 @@
 	"tags": [],
 	"description": "",
 	"content": "An HPC account is required to access HPC resources. These accounts are available to AP faculty, research staff, and graduate students.\nPlease note that HPC accounts and resources are for research and teaching purposes only; use of the resources for commercial purposes is not permitted.\nIn order to apply for a new account, please fill out the access request form. Applications for accounts are reviewed by HPC management and processed within one week.\n"
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/defaults/",
+	"title": "Defaults",
+	"tags": [],
+	"description": "",
+	"content": "You can check the default ENVs by typing env in the terminal. It\u0026rsquo;s Dazzled if all are printed \u0026hellip;\nHere\u0026rsquo;s the trick to check what you want:\n$ echo $PATH # Some important ones: #\t$LIBRARY_PATH, $PATH, $JASPERINC, LD_LIBRARY_PATH    **Click to see the result:**   /public/software/mathlib/ncl/bin:/public/software/mpi/openmpi/1.6.5/intel/bin:/opt/gridview//pbs/dispatcher-sched/bin:/opt/gridview//pbs/dispatcher-sched/sbin:/opt/gridview//pbs/dispatcher/bin/lsf_cmd:/opt/gridview//pbs/dispatcher/bin:/opt/gridview//pbs/dispatcher/sbin:/public/software/compiler/composer_xe_2013_sp1.0.080/bin/intel64:/opt/gridview/clusquota//bin:/opt/gridview/clusquota//sbin:/opt/gridview//clusconf/bin:/public/software/ImageMagick/bin:/public/home/test/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/opt/kde3/bin:/opt/ibutils/bin:/usr/java/jdk1.6.0_27//bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/public/software/compiler/pgi/linux86-64/10.6/bin:/public/software/mathlib/cdo/bin:/public/software/mathlib/netcdf/4.3.0/intel/bin:/public/software/mathlib/ncview-2.1.5/bin:/public/software/ncl-6.4.0/bin/:/public/software/mathlib/nco/4.3.7/bin:/public/software/grads/2.0.2/bin    To display the result line by line:\n$ sed 's/:/\\n/g' \u0026lt;\u0026lt;\u0026lt; \u0026quot;$PATH\u0026quot;    **Click to see the result:**   /public/software/mathlib/ncl/bin /public/software/mpi/openmpi/1.6.5/intel/bin /opt/gridview//pbs/dispatcher-sched/bin /opt/gridview//pbs/dispatcher-sched/sbin /opt/gridview//pbs/dispatcher/bin/lsf_cmd /opt/gridview//pbs/dispatcher/bin /opt/gridview//pbs/dispatcher/sbin /public/software/compiler/composer_xe_2013_sp1.0.080/bin/intel64 /opt/gridview/clusquota//bin /opt/gridview/clusquota//sbin /opt/gridview//clusconf/bin /public/software/ImageMagick/bin /public/home/test/bin /usr/local/bin /usr/bin /bin /usr/bin/X11 /usr/X11R6/bin /usr/games /opt/kde3/bin /opt/ibutils/bin /usr/java/jdk1.6.0_27//bin /usr/lib/mit/bin /usr/lib/mit/sbin /public/software/compiler/pgi/linux86-64/10.6/bin /public/software/mathlib/cdo/bin /public/software/mathlib/netcdf/4.3.0/intel/bin /public/software/mathlib/ncview-2.1.5/bin /public/software/ncl-6.4.0/bin/ /public/software/mathlib/nco/4.3.7/bin /public/software/grads/2.0.2/bin    "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/login/login-1/",
@@ -70,6 +84,13 @@
 	"content": " MobaXterm (Win) If you are on Windows, you can directly use MobaXterm to transfer files.\nConnect to your session. On the left panel you should see an SFTP panel opened.\n You have just to drag and drop your files to this panel to transfer files to the cluster.\n To retrieve a file from the cluster, you can right click on it and choose the Download option.\n  Please refers to MobaXterm documentation for more informations on the available features.\nFileZilla (Windows / Linux / OS X / Unix)  Download the FileZilla client application from filezilla-project.org and install it.\n First we need to add our session:\n Start the application.\n click on the Site Manager button on the top left or select Site Manager from the File menu.\n Click on the New Site button and enter/select the following:\n  - Host: \u0026lt;IP_address\u0026gt; - Port: 22 - Protocol: SFTP - SSH File Transfer Protocol - Logon Type: Normal - User: \u0026lt;username\u0026gt; - Password : \u0026lt;passward\u0026gt;   Click on the Connect button.  On the very top, beneath the quick connect, you see the message log. Below you have the directory tree and the contents of the current directory for you local computer on the left and the remote location on the right.\n To transfer a file, simply drag and drop it from the directory listing on the left side to destination directory on the right (to transfer from local to remote) or vice versa (to transfer from remote to local). You can also select a file by left clicking on it once and then right click on it to get the context menu and select \u0026ldquo;Upload\u0026rdquo; or \u0026ldquo;Download\u0026rdquo; to transfer it.\n When you click the fifth icon on the top with the two green arrows to toggle the transfer queue, you can see the status of ongoing transfers on the very bottom of the window.\n  If you can\u0026rsquo;t connect to the cluster with this error: Error: Server unexpectedly closed network connection Error: Could not connect to server Please allow FileZilla in Firewall. Go to Windows Defender Firewall \u0026ndash;\u0026gt; Allowed Apps\u0026ndash;\u0026gt; Allow another app and then add FileZilla (filezilla.exe and fzsftp.exe) from where you install it.\n "
 },
 {
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/environment-variables/local-vs-global/",
+	"title": "Local vs Global",
+	"tags": [],
+	"description": "",
+	"content": " Global ENV If an ENV is defined as a global scope variable, its value is defined for all the programs or scripts run in that terminal.\nDefine a global env in terminal:\n$ export \u0026lt;varname\u0026gt;=\u0026lt;value\u0026gt;  There is no space between name, =, and value. Otherwise, each of the three will be considered as a separate command, thus raising an error.\n Now, Just place a $ before the varname and Linux will take care of replacing it with its value.\nType on the command line or use it in any script:\n$ echo $\u0026lt;varname\u0026gt;  echo command is just an example, environment variables can be used in the same way with any Linux command.\nGlobal ENVs are global only in the context of a terminal from which it is defined, Hence even being global ENV will not be valid for a terminal other than the genesis terminal of the ENV.  For persisting the ENV, This is what we will explore in Persisting ENVs section.\n Local ENV Local scoped ENVs can only be accessed by the terminal itself and not by any program or shell script even if the latter is started by the same terminal for which the local scoped ENV is defined.\nDefine a local env in terminal:\n$ \u0026lt;varname\u0026gt;=\u0026lt;value\u0026gt;  Accessing local scoped ENV is done the same way you access a global scoped ENV.\n Commands    Command Description     echo $\u0026lt;varname\u0026gt; To display value of a variable   env Displays all environment variables   \u0026lt;varname\u0026gt;=\u0026lt;value\u0026gt; Create a new local variable   unset \u0026lt;varname\u0026gt; Remove a variable   export \u0026lt;varname\u0026gt;=\u0026lt;value\u0026gt; To set value of an environment variable    References  Linux Environment Variables List of Environment Variables in Linux/Unix  "
+},
+{
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/login/",
 	"title": "Login",
 	"tags": [],
@@ -77,11 +98,25 @@
 	"content": "If you\u0026rsquo;ve recently received a cluster account, you should have received an email with information about your account and a link to this User Guide.\nAn HPC account is required to log into and use HPC resources. To apply for an HPC account see the application form page.\nPlease choose the preferred method to continue this Login Guide:\n GUI  graphical user interface (Win)\n CLI  Command line interface (Windows / Linux / OS X / Unix)\n For Windows users, it\u0026rsquo;s better to use GUI method; For other platform\u0026rsquo;s users, it\u0026rsquo;s better/necessary to use CLI method.\n Update the content among placeholders \u0026lt;\u0026gt; with your data; Dollar sign $ indicates that following content should be typed in the terminal.\n You can obtain required info from received email.\n "
 },
 {
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/load/load-1/",
+	"title": "Matlab",
+	"tags": [],
+	"description": "",
+	"content": "Matlab isn\u0026rsquo;t loaded by default:\n$ which matlab    **Click to see the result:**   which: no matlab in (/public/software/mathlib/ncl/bin:/public/software/mpi/openmpi/1.6.5/intel/bin:/opt/gridview//pbs/dispatcher-sched/bin:/opt/gridview//pbs/dispatcher-sched/sbin:/opt/gridview//pbs/dispatcher/bin/lsf_cmd:/opt/gridview//pbs/dispatcher/bin:/opt/gridview//pbs/dispatcher/sbin:/public/software/compiler/composer_xe_2013_sp1.0.080/bin/intel64:/opt/gridview/clusquota//bin:/opt/gridview/clusquota//sbin:/opt/gridview//clusconf/bin:/public/software/ImageMagick/bin:/public/home/test/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/opt/kde3/bin:/opt/ibutils/bin:/usr/java/jdk1.6.0_27//bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/public/software/compiler/pgi/linux86-64/10.6/bin:/public/software/mathlib/cdo/bin:/public/software/mathlib/netcdf/4.3.0/intel/bin:/public/software/mathlib/ncview-2.1.5/bin:/public/software/ncl-6.4.0/bin/:/public/software/mathlib/nco/4.3.7/bin:/public/software/grads/2.0.2/bin)    Let\u0026rsquo;s find where is Matlab:\n$ ls /datadir1/software/MATLAB/ # output: # R2017a R2018a  Choose which one you prefer and add it to ~/.profile by Vi editor:\nexport PATH=$PATH:/datadir1/software/MATLAB/R2018a/bin  Then source your config file in terminal and check again:\n$ source ~/.profile $ which matlab # output: # /datadir1/software/MATLAB/R2018a/bin/matlab  "
+},
+{
 	"uri": "https://hpc-nuist-ap.github.io/overview/node-allocation/",
 	"title": "Node Allocation",
 	"tags": [],
 	"description": "",
 	"content": " The HPC Linux computing resource consists of a total 16 compute nodes in one cluster. The charts below describe the various Linux computing partitions available on HPC, their names, and information on the partitions’ computing power.\nGeneral Computing Partitions and Nodes These are general nodes available to all HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     low node1 ~ node6 6 125 G 24 2.5 Xeon - 50 G    Private Computing Partitions and Nodes These are personal nodes available to partial HPC researchers:\n   Partition Names Node Range # of Nodes Mem size Cores per Node CPU Speed GHz CPU Type GPUs per Node /tmp Size     high node7 ~ node8 2 125 G 24 2.5 Xeon - 50 G   Addnode node9 ~ node14 6 125 G 24 2.5 Xeon - 50 G   zhao node15 ~ node16 2 125 G 24 (node15)\n28 (node16) 2.5 Xeon - 50 G    Students could have the permission of additional nodes if they\u0026rsquo;re belong to teachers mentioned below.\nhigh: Yan Yin; Addnode: Xiaoyan Ma, Chao Liu; zhao: Tianliang Zhao\n Some nodes are privately owned and are not available to all users. In addition, nodes are sometimes reserved for specific projects or purposes and may be temporarily unavailable.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/running-jobs/submitting/",
+	"title": "Submitting",
+	"tags": [],
+	"description": "",
+	"content": " Creating a PBS Script To set the parameters for your job, you can create a control file that contains the commands to be executed.\nTypically, this is in the form of a PBS script. This script is then submitted to PBS using the qsub command.\nHere is a sample PBS file for running wrf.exe, named myjobs.pbs, followed by an explanation of each line of the file.\n#!/bin/bash #PBS -N \u0026lt;job_name\u0026gt; #PBS -q \u0026lt;queue_name\u0026gt; # low,high,Addnode,zhao #PBS -l nodes=\u0026lt;N\u0026gt;:ppn=\u0026lt;M\u0026gt; # Number of nodes, number of processors each node cd $PBS_O_WORKDIR # change to the directory from which the job was submitted nprocs=`cat $PBS_NODEFILE | wc -l` # Get number of processors allocated mpirun -np $nprocs ./wrf.exe # run the command   The first line in the file identifies which shell will be used for the job. In this example, bash is used;\n The second line specifies the name of queue. Please check node allocation chapter;\n The third line specifies the number of nodes and processors each node desired for this job. In this example, one node with two processors is being requested;\n The fourth line tells the HPC cluster to access the directory where the data is located for this job. In this example, the cluster is instructed to change the directory to where the job was submitted. Absolute path also works;\n The fifth line calculates number of processors allocated;\n The sixth line tells the cluster to run the program. In this example, it runs wrf.exe using N*M processors.\n  Using the qsub Command To submit your job without requesting additional resources, issue the command\n$ qsub myjob.pbs  Matlab Script #!/bin/bash #PBS -N job_name #PBS -q queue_name #PBS -l nodes=N:ppn=M cd $PBS_O_WORKDIR matlab -nodisplay \u0026lt; \u0026lt;matlab_script_name\u0026gt;  Python Script #!/bin/bash #PBS -N job_name #PBS -q queue_name #PBS -l nodes=N:ppn=M cd $PBS_O_WORKDIR export PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate python36 python \u0026lt;python_script_name\u0026gt;  References  Running a Job on HPC using PBS  "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/account/accessing/",
@@ -105,6 +140,34 @@
 	"content": "The two most common tools you can use for data transfers over SSH:\n scp: for the full transfer of files and directories (only works fine for single files or directories of small/trivial size)\n rsync: a software application which synchronizes files and directories from one location to another while minimizing data transfer as only the outdated or inexistent elements are transferred (practically required for lengthy complex transfers, which are more likely to be interrupted in the middle).\n  Of both, normally the second approach should be preferred, as more generic; note that, both ensure a secure transfer of the data, within an encrypted tunnel.\nPlease check these two excellent tutorials: scp_tutorial and rsync_tutorial.\n "
 },
 {
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/running-jobs/checking-status/",
+	"title": "Checking Status",
+	"tags": [],
+	"description": "",
+	"content": "To check on the status of your job, you will use the qstat and qdel command:\n   Commands Functions     qstat Lists jobs in queue   qstat –q \u0026lt;queuename\u0026gt; Lists the status of all queues   qstat -n Lists jobs and nodes they are assigned to   qdel \u0026lt;jobid\u0026gt; Delete a specific job   qstat –u \u0026lt;username\u0026gt; Lists a user\u0026rsquo;s jobs   qstat -f Prints all info about all jobs   qstat -f XXXX Prints all info about job XXXX   qstat -n Displays nodes allocated to any running jobs   qstat -Q Displays status of queues       qdel \u0026lt;jobid\u0026gt; Delete a specific job   qdel $(qselect -u AccessID) Delete all of a user\u0026rsquo;s jobs    "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/environment-variables/common-envs/",
+	"title": "Common ENVs",
+	"tags": [],
+	"description": "",
+	"content": " Here\u0026rsquo;re some common environment variables:\n   Variable Description     PATH This variable contains a colon (:)-separated list of directories in which your system looks for executable files. When you enter a command on terminal, the shell looks for the command in different directories mentioned in the $PATH variable. If the command is found, it executes. Otherwise, it returns with an error \u0026lsquo;command not found\u0026rsquo;.   LD_LIBRARY_PATH LD_LIBRARY_PATH tells the dynamic link loader   USER The username   HOME Default path to the user\u0026rsquo;s home directory   EDITOR Path to the program which edits the content of files   UID User\u0026rsquo;s unique ID   TERM Default terminal emulator   SHELL Shell being used by the user    You can find out more on Linux system ENVs at List of Environment Variables in Linux/Unix.\nReferences  List of Environment Variables in Linux/Unix  "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/load/",
+	"title": "Load",
+	"tags": [],
+	"description": "",
+	"content": "If you want to load unloaded/preferred software, please check directories (/public/software and /datadir1/software) and set corresponding ones in config files.\n Matlab   Python   "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/load/load-2/",
+	"title": "Python",
+	"tags": [],
+	"description": "",
+	"content": " Python\u0026rsquo;s version is 2.6.8 by default. For scientific purpose, it\u0026rsquo;s lack of many packages and out-of-date version.\nWe\u0026rsquo;ve created our own Anaconda mirror and two environments (python2.7 and python3.6).\nThere\u0026rsquo;re two options for you: use installed environment and create your own python environment.\nUse installed one  Python2.7  add these lines to~/.profile:\n export PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate python27   Python3.6  add these lines to~/.profile:\n export PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate python36   Check installed packages   $ conda list # If you need more packages, plead add to the end of `/public/software/anaconda/requirements.txt`.  Create own one The mirror of Anaconda is located at these directory:\n/public/software/anaconda/archive /public/software/anaconda/pkgs  You can just run /public/software/anaconda/archive/\u0026lt;Anaconda****.sh\u0026gt; to install at your own directory.\nSet mirror If you choose to install your own anaconda, you should set mirror to speed up installing packages. Choose preferred method below and edit ~/.condarcas same as example:\n Local mirror (fastest, updated once a month)   allow_other_channels : false channel_alias: file://public/software/anaconda/pkgs channels: - free - main - pro - conda-forge offline: true   Tsinghua mirror (slow, lastest)   channels: - defaults - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ show_channel_urls: true  "
+},
+{
 	"uri": "https://hpc-nuist-ap.github.io/overview/resource-limits/",
 	"title": "Resource Limits",
 	"tags": [],
@@ -126,11 +189,46 @@
 	"content": "For students, all student accounts are closed and files are deleted at the deadline filled in the application form.\nFor teachers, users’ accounts are not automatically deactivated upon termination of an employee because many people change their employment status.\nThe administrator of HPC is ultimately responsible for notifying users when user accounts should be closed, and to specify the disposition of a user\u0026rsquo;s files and data.\n"
 },
 {
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/environment-variables/config-files/",
+	"title": "Config Files",
+	"tags": [],
+	"description": "",
+	"content": " Besides having environment variables, Linux also has some scripts which are used to control Linux environment behavior.\nThese scripts control Linux behavior from boot time all the way to startup and run time. You can give normal Linux commands and also complex shell scripts in these files.\nAs the AP cluster uses Bash as the default shell, you need to understand the differences among three config files: .bashrc, .bash_profile, and .profile.\nHere\u0026rsquo;s the info from bash manpage:\n When bash is invoked as an interactive login shell, or as a non-interactive shell with the --login option, it first reads and executes commands from the file /etc/profile, if that file exists.\nAfter reading that file, it looks for~/.bash_profile, ~/.bash_login, and ~/.profile, in that order, and reads and executes commands from the first one that exists and is readable. The --noprofile option may be used when the shell is started to inhibit this behavior.\nWhen an interactive shell that is not a login shell is started, bash reads and executes commands from /etc/bash.bashrc and ~/.bashrc, if these files exist.\nThis may be inhibited by using the --norc option. The --rcfile file option will force bash to read and execute commands from file instead of /etc/bash.bashrc and ~/.bashrc.\n  .profile is for things that are not specifically related to Bash, like environment variables PATH and friends, and should be available anytime. .bashrc is for the configuring the interactive Bash usage, like Bash aliases, setting your favorite editor, setting the Bash prompt, etc. .bash_profile is for making sure that both the things in .profile and .bashrc are loaded for login shells. You\u0026rsquo;ll find most people end up telling their .bash_profile to also read .bashrc with something like [[ -r ~/.bashrc ]] \u0026amp;\u0026amp; . ~/.bashrc  Config files under /etc directory affect behavior for every user, while these under ~ (HOME) directory affect behavior for only a specific user.\nA login shell means a session where you log in to the system and directly end up in Bash, like a remote ssh session or logging in through a non-graphical text terminal.\nA non-login shell is then the type of shells you open after logging in: typically in a graphical session when you open a new terminal window.\n Summary References  bashrc_and_others My bashrc, bash aliases, profile and other files Choosing between .bashrc, .profile, .bash_profile, etc .bash_profile vs .bashrc Ubuntu  "
+},
+{
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/environment-variables/",
 	"title": "Environment Variables",
 	"tags": [],
 	"description": "",
 	"content": "A brief introduction found on Medium:\n Akshit Grover:\nEveryone knows what are variables, Data stored somewhere in memory when referenced by some indicator (variable name).\nEnvironment variables are none other than variables, It’s just that data stored in that variable is what describes environment behaviour.\nSo now I think it is clear that why environment variables are so useful and interesting, One can control environments behaviour just by setting, altering, deleting several environment variables.\nBefore we dive into playing with ENVs (environment variables) it is important to understand where to set them.\nAll the play with ENVs will be done in a beautiful place known as the command line. One can access command line using Terminal.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/installation/",
+	"title": "Installation",
+	"tags": [],
+	"description": "",
+	"content": "In addition to the software provided on the cluster, you are welcome to install your own software.\nBefore installing software yourself, first check if it is already provided on the cluster.\nIf you are installing software exclusively for your use, you can install it in your Home directory (/public/home/\u0026lt;username\u0026gt;).\nIf you will be doing a lot of software installation, you may want to add sub-directories for sources (source files downloaded), softwares (the installed software), scripts (if you want to document and routinize your installation process using a script \u0026ndash; which is recommended).\nIn any case, be cognizant of space limitations in your Home directory (see quota).\n Xin Zhang has ever installed several packages. You can check this part of his blog for instruction.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/",
+	"title": "Softwares",
+	"tags": [],
+	"description": "",
+	"content": "HPC maintains software, compilers, and libraries in the directory /public/software and /datadir1/software.\nTo access much of the software available on the AP cluster - ranging from compilers and interpreters to statistical analysis and visualization software, and much more - you\u0026rsquo;ll need to set ENVs by yourself according to the Load section.\nWe\u0026rsquo;ll use Environment Modules to manage softwares soon. It\u0026rsquo;ll be much easier and more convenient \u0026hellip; Anyway, it\u0026rsquo;s better to understand ENVs before using module.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/environment-variables/persisting-envs/",
+	"title": "Persisting ENVs",
+	"tags": [],
+	"description": "",
+	"content": "To persist ENVs, just put the commands in one of three config files mentioned before, as these files will be executed when ever you access a shell.\nPlease check the template written by Stefaan Lippens, especially the .profile part.\n$PATH and $LD_LIBRARY_PATH are the most important for compiling models.\nPlease check these two tutorials in detail: PATH_tutorial and LD_LIBRARY_PATH_tutorial.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/running-jobs/",
+	"title": "Running Jobs",
+	"tags": [],
+	"description": "",
+	"content": "To run a job on the HPC cluster, you will need to set up a Portable Batch System (PBS) file.\nThis PBS file defines the commands and cluster resources used for the job.\nA PBS file is a simple text file that can be easily edited with a UNIX editor, such as vi, pico, or emacs.\nAny high-cpu process in foreground/background will be killed. The user will be deleted after warned twice.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/",

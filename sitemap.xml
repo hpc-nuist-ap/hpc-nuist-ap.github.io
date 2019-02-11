@@ -15,14 +15,6 @@
   </url>
   
   <url>
-    <loc>https://hpc-nuist-ap.github.io/developers-guide/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hpc-nuist-ap.github.io/superusers-guide/</loc>
-  </url>
-  
-  <url>
     <loc>https://hpc-nuist-ap.github.io/tutorials/</loc>
   </url>
   
@@ -31,7 +23,23 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/superusers-guide/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/developers-guide/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/logs/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/account/application/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/softwares/defaults/</loc>
   </url>
   
   <url>
@@ -43,11 +51,23 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/environment-variables/local-vs-global/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/users-guide/login/</loc>
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/softwares/load/load-1/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/overview/node-allocation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/running-jobs/submitting/</loc>
   </url>
   
   <url>
@@ -63,6 +83,22 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/running-jobs/checking-status/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/environment-variables/common-envs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/softwares/load/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/softwares/load/load-2/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/overview/resource-limits/</loc>
   </url>
   
@@ -75,7 +111,27 @@
   </url>
   
   <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/environment-variables/config-files/</loc>
+  </url>
+  
+  <url>
     <loc>https://hpc-nuist-ap.github.io/users-guide/environment-variables/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/softwares/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/softwares/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/environment-variables/persisting-envs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/running-jobs/</loc>
   </url>
   
   <url>

@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="description" content="">
+
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Config Files :: HPC</title>
+
+    
+    <link href="/css/nucleus.css?1549877248" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1549877248" rel="stylesheet">
+    <link href="/css/hybrid.css?1549877248" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1549877248" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1549877248" rel="stylesheet">
+    <link href="/css/auto-complete.css?1549877248" rel="stylesheet">
+    <link href="/css/theme.css?1549877248" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1549877248" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1549877248" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1549877248"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/users-guide/environment-variables/config-files/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="https://hpc-nuist-ap.github.io/">
+<img src="/images/logo.png" alt="logo">
+</a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1549877248"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1549877248"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/hpc-nuist-ap.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1549877248"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/overview/" title="Overview" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/overview/">
+          <b>1. </b>Overview
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/node-allocation/" title="Node Allocation" class="dd-item ">
+        <a href="/overview/node-allocation/">
+        Node Allocation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/resource-limits/" title="Resource Limits" class="dd-item ">
+        <a href="/overview/resource-limits/">
+        Resource Limits
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/overview/operating-system/" title="Operating System" class="dd-item ">
+        <a href="/overview/operating-system/">
+        Operating System
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/account/" title="Account" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/account/">
+          <b>2. </b>Account
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/account/application/" title="Application" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/account/application/">
+          Application
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/account/application/application-1/" title="Application form" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/account/application/application-1/">
+          Application form
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/account/accessing/" title="Accessing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/account/accessing/">
+          Accessing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/account/closing/" title="Closing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/account/closing/">
+          Closing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/" title="User&#39;s Guide" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/users-guide/">
+          <b>3. </b>User&#39;s Guide
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/login/" title="Login" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/login/">
+          Login
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/login/login-1/" title="GUI" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/login/login-1/">
+          GUI
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/login/login-2/" title="CLI" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/login/login-2/">
+          CLI
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/transferring/" title="Transferring" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/transferring/">
+          Transferring
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/transferring/transferring-1/" title="GUI" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/transferring/transferring-1/">
+          GUI
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/transferring/transferring-2/" title="CLI" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/transferring/transferring-2/">
+          CLI
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/environment-variables/" title="Environment Variables" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/users-guide/environment-variables/">
+          Environment Variables
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/environment-variables/local-vs-global/" title="Local vs Global" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/environment-variables/local-vs-global/">
+          Local vs Global
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/environment-variables/common-envs/" title="Common ENVs" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/environment-variables/common-envs/">
+          Common ENVs
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/environment-variables/config-files/" title="Config Files" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/users-guide/environment-variables/config-files/">
+          Config Files
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/environment-variables/persisting-envs/" title="Persisting ENVs" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/environment-variables/persisting-envs/">
+          Persisting ENVs
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/softwares/" title="Softwares" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/softwares/">
+          Softwares
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/softwares/defaults/" title="Defaults" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/softwares/defaults/">
+          Defaults
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/softwares/load/" title="Load" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/softwares/load/">
+          Load
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/softwares/load/load-1/" title="Matlab" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/softwares/load/load-1/">
+          Matlab
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/softwares/load/load-2/" title="Python" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/softwares/load/load-2/">
+          Python
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/softwares/installation/" title="Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/softwares/installation/">
+          Installation
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/running-jobs/" title="Running Jobs" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/running-jobs/">
+          Running Jobs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/running-jobs/submitting/" title="Submitting" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/running-jobs/submitting/">
+          Submitting
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/users-guide/running-jobs/checking-status/" title="Checking Status" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/running-jobs/checking-status/">
+          Checking Status
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/tutorials/">
+          <b>4. </b>Tutorials
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/faq/" title="FAQ" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/faq/">
+          <b>5. </b>FAQ
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/superusers-guide/" title="Superuser&#39;s Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/superusers-guide/">
+          <b>6. </b>Superuser&#39;s Guide
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/developers-guide/" title="Developer&#39;s Guide" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/developers-guide/">
+          <b>7. </b>Developer&#39;s Guide
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/logs/" title="Logs/Events" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/logs/">
+          <b>8. </b>Logs/Events
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="mailto:xinzhang1215@gmail.com"><i class='far fa-envelope'></i> Contact us</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://hpc-nuist-ap.github.io/credits"><i class='fas fa-bullhorn'></i> Credits</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/environment%20variables/config%20files/_index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/environment-variables/'>Environment Variables</a> > Config Files
+          
+         
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#summary">Summary</a>
+<ul>
+<li><a href="#references"><em>References</em></a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Config Files</h1>
+          
+
+        
+
+
+
+
+<p>Besides having environment variables, Linux also has some scripts which are used to control Linux environment behavior.</p>
+
+<p>These scripts control Linux behavior from boot time all the way to startup and run time. You can give normal Linux commands and also complex shell scripts in these files.</p>
+
+<p>As the AP cluster uses <strong>Bash as the default shell</strong>, you need to understand the differences among three <strong>config files</strong>: <code>.bashrc</code>, <code>.bash_profile</code>, and <code>.profile</code>.</p>
+
+<p>Here&rsquo;s the info from <a href="https://linux.die.net/man/1/bash">bash manpage</a>:</p>
+
+<blockquote>
+<p>When bash is invoked as an interactive <strong>login shell</strong>, or as a non-interactive shell with the <code>--login</code> option, it first reads and executes commands from the file <code>/etc/profile</code>, if that file exists.</p>
+
+<p>After reading that file, it looks for<code>~/.bash_profile</code>, <code>~/.bash_login</code>, and <code>~/.profile</code>, in that order, and reads and executes commands from the first one that exists and is readable. <br>
+The <code>--noprofile</code> option may be used when the shell is started to inhibit this behavior.</p>
+
+<p>When an interactive shell that is <strong>not a login shell</strong> is started, bash reads and executes commands from <code>/etc/bash.bashrc</code> and <code>~/.bashrc</code>, if these files exist.</p>
+
+<p>This may be inhibited by using the <code>--norc</code> option. <br>
+The <code>--rcfile</code> file option will force bash to read and execute commands from file instead of <code>/etc/bash.bashrc</code> and <code>~/.bashrc</code>.</p>
+</blockquote>
+
+<ul>
+<li><code>.profile</code> is for things that are not specifically related to Bash, like environment variables <code>PATH</code> and friends, and should be available anytime.</li>
+<li><code>.bashrc</code> is for the configuring the interactive Bash usage, like Bash aliases, setting your favorite editor, setting the Bash prompt, etc.</li>
+<li><code>.bash_profile</code> is for making sure that both the things in <code>.profile</code> and <code>.bashrc</code> are loaded for login shells. You&rsquo;ll find most people end up telling their <code>.bash_profile</code> to also read <code>.bashrc</code> with something like <code>[[ -r ~/.bashrc ]] &amp;&amp; . ~/.bashrc</code></li>
+</ul>
+
+<div class="notices note" ><p>Config files under <code>/etc</code> directory affect behavior for <strong>every user</strong>, while these under <code>~</code> (HOME) directory affect behavior for only a <strong>specific user</strong>.</p>
+
+<p>A <strong>login shell</strong> means a session where you log in to the system and directly end up in Bash, like a remote ssh session or logging in through a non-graphical text terminal.</p>
+
+<p>A <strong>non-login shell</strong> is then the type of shells you open after logging in: typically in a graphical session when you open a new terminal window.</p>
+</div>
+
+
+<h3 id="summary">Summary</h3>
+
+<p><img src="https://what.thedailywtf.com/uploads/files/1462690324423-upload-f8cce917-e33c-4671-ac56-f1b0da9f687f.png" alt="summary" /></p>
+
+<h4 id="references"><em>References</em></h4>
+
+<ol>
+<li><a href="https://www.stefaanlippens.net/bashrc_and_others/">bashrc_and_others</a></li>
+<li><a href="https://www.stefaanlippens.net/my_bashrc_aliases_profile_and_other_stuff/">My bashrc, bash aliases, profile and other files</a></li>
+<li><a href="https://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc">Choosing between .bashrc, .profile, .bash_profile, etc</a></li>
+<li><a href="https://what.thedailywtf.com/topic/19866/bash_profile-vs-bashrc-ubuntu">.bash_profile vs .bashrc Ubuntu</a></li>
+</ol>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/users-guide/environment-variables/common-envs/" title="Common ENVs"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/users-guide/environment-variables/persisting-envs/" title="Persisting ENVs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1549877248"></script>
+    <script src="/js/perfect-scrollbar.min.js?1549877248"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1549877248"></script>
+    <script src="/js/jquery.sticky.js?1549877248"></script>
+    <script src="/js/featherlight.min.js?1549877248"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1549877248"></script>
+    <script src="/js/highlight.pack.js?1549877248"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1549877248"></script>
+    <script src="/js/learn.js?1549877248"></script>
+    <script src="/js/hugo-learn.js?1549877248"></script>
+
+    <link href="/mermaid/mermaid.css?1549877248" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1549877248"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
