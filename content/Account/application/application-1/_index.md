@@ -2,7 +2,7 @@
 title: "Application form"
 ---
 
-  <form action="http://formspree.io/363910399@qq.com" method="POST"> 
+  <form action="https://formspree.io/xinzhang1215@gmail.com" method="POST"> 
 
   <div class="form-group">
     <label for="name">Chinese Name (*)</label>
@@ -31,7 +31,7 @@ title: "Application form"
 
   <div class="form-group">
       <label for="Supervisor">Group (*)</label>
-      <select name="Supervisor" class="form-control">
+      <select name="Supervisor" class="form-control" required="required">
         <option value="">Choose...</option>
         <option>Undergraduate</option>
         <option>Graduate</option>
@@ -89,7 +89,7 @@ title: "Application form"
 
   <div class="form-group">
     <label for="date">Deadline (for student)</label>
-    <input type="date" min="2019-01-01" max="2050-01-01" step="7">
+    <input type="date" required="required" min="2019-01-01" max="2050-01-01" step="7">
   </div>
 
   <button type="submit">Send</button>
