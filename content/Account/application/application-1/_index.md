@@ -2,7 +2,7 @@
 title: "Application form"
 ---
 
-  <form action="http://formspree.io/ariestiyansyah.rizky@gmail.com" method="POST"> 
+  <form action="http://formspree.io/xinzhang1215@gmail.com" method="POST"> 
 
   <div class="form-group">
     <label for="name">Chinese Name (*)</label>
@@ -91,6 +91,6 @@ title: "Application form"
     <label for="date">Deadline (for student)</label>
     <input type="date" min="2019-01-01" max="2050-01-01" step="7">
   </div>
-  
+
   <button type="submit">Send</button>
   </form>
