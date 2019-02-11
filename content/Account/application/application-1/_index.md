@@ -10,17 +10,17 @@ title: "Application form"
   </div>
 
   <div class="form-group">
-    <label for="name">Username (*)</label>
-      <input type="text" name="name" class="form-control" placeholder="Created HPC username" required>
+    <label for="username">Username (*)</label>
+      <input type="text" name="username" class="form-control" placeholder="Created HPC username (short, similar to Chinese Name)" required>
   </div>
 
   <div class="form-group">
-    <label for="name">Student/Teacher ID (*)</label>
+    <label for="ID">Student/Teacher ID (*)</label>
       <input type="text" name="ID" class="form-control" placeholder="Your ID" required>
   </div>
 
   <div class="form-group">
-    <label for="name">Phone (*)</label>
+    <label for="Phone">Phone (*)</label>
       <input type="text" name="Phone" class="form-control" placeholder="Your phone number" required>
   </div>
 
@@ -30,8 +30,8 @@ title: "Application form"
   </div>
 
   <div class="form-group">
-      <label for="Supervisor">Group (*)</label>
-      <select name="Supervisor" class="form-control" required="required">
+      <label for="Group">Group (*)</label>
+      <select name="Group" class="form-control" required="required">
         <option value="">Choose...</option>
         <option>Undergraduate</option>
         <option>Graduate</option>
