@@ -12,14 +12,19 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
 ---
 
 * __Python (Basic)__
+
   * [ThinkPython2](https://github.com/AllenDowney/ThinkPython2)
-  * [Learning Scientific Programming with Python](https://doi.org/10.1017/CBO9781139871754 Add to Citavi project by DOI)
+  * [Learning Scientific Programming with Python](https://doi.org/10.1017/CBO9781139871754)
   * [Python for scientists](https://github.com/theJollySin/python_for_scientists)
   * [Python courses for the scientific researcher](https://github.com/SciTools/courses)
 
 * __Python (Advanced)__
+
+  * [ams-ml-python-course](https://github.com/djgagne/ams-ml-python-course)
+  * [fastai](https://github.com/fastai/fastai)
   * [Scipy 2018 scikit-learn tutorial](https://github.com/amueller/scipy-2018-sklearn)
   * [Introduction to Machine Learning for Coders](https://course.fast.ai/ml)
+  * [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
   * [Practical Deep Learning For Coders](https://course.fast.ai/)
   * [Python Machine Learning (2nd edition)](https://github.com/rasbt/python-machine-learning-book-2nd-edition)
   * [Neural Networks and Deep Learning](https://github.com/mnielsen/neural-networks-and-deep-learning)
@@ -45,9 +50,13 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
   * [Plotly](https://github.com/plotly)
   * [geoviews](https://github.com/pyviz/geoviews)
   * [pysheds](https://github.com/mdbartos/pysheds)
+  * [satpy](https://github.com/pytroll/satpy)
+  * [ccplot](https://github.com/peterkuma/ccplot)
+  * [pyModis](https://github.com/lucadelu/pyModis)
   * [python-matlab-bridge](https://github.com/arokem/python-matlab-bridge)
 
 * __Fortran__
+
   * [Introduction to Modern Fortran for the Earth System Sciences](https://www.springer.com/la/book/9783642370083)
   * [Fortran for Scientists & Engineers](https://www.goodreads.com/book/show/36319697-fortran-for-scientists-engineers?ac=1&from_search=true) 
 
@@ -70,6 +79,7 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
   * [Docker Cheat Sheet](https://github.com/wsargent/docker-cheat-sheet)
   * [Numerical weather prediction (NWP) containers](https://dtcenter.org/community-code/numerical-weather-prediction-nwp-containers)
   * [glmtools-docker](https://github.com/deeplycloudy/glmtools-docker)
+  * [ecmwf/jupyter-notebook](https://hub.docker.com/r/ecmwf/jupyter-notebook/)
 
 * __Git__
 
@@ -79,34 +89,41 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
   * [git tips](https://github.com/git-tips/tips)
 
 * __Coding/Learning Group__
+
   * [studyGroup](https://github.com/UofTCoders/studyGroup)
   * [Coding Club](https://github.com/ourcodingclub/ourcodingclub.github.io)
+  * [datacarpentry](https://datacarpentry.org/lessons/)
 
 
 * __LaTeX__
 
   * [Beginner's Tutorial](https://www.sharelatex.com/blog/latex-guides/beginners-tutorial.html)
   * [A simple guide to LaTeX](https://www.latex-tutorial.com/tutorials/)
+  * [The Not So Short Introduction to LATEX](https://tobi.oetiker.ch/lshort/lshort.pdf)
 
 * __Math__
 
   * [Applied Numerical Computing](http://www.seas.ucla.edu/~vandenbe/ee133a.html)
 
 * __Atmosphere__
+
+  * [Sever Weather](http://learnweather.com/)
+  * [AMS_2019 (recorded)](https://ams.confex.com/ams/2019Annual/meetingapp.cgi/ModuleProgramBook/0)
   * [Atmospheric Science (2nd Edition)](https://www.elsevier.com/books/atmospheric-science/wallace/978-0-12-732951-2)
   * [An Introduction to Dynamic Meteorology (5th Edition)](https://www.elsevier.com/books/an-introduction-to-dynamic-meteorology/holton/978-0-12-384866-6)
   * [A First Course in Atmospheric Thermodynamics](https://www.goodreads.com/book/show/5296780-a-first-course-in-atmospheric-thermodynamics)
   * [A Short Course in Cloud Physics (3rd Edition)](https://www.elsevier.com/books/a-short-course-in-cloud-physics/yau/978-0-08-057094-5)
   * [Microphysics of Clouds and Precipitation](https://www.springer.com/us/book/9780792342113)
-  * [Physics and Chemistry of Clouds](https://doi.org/10.1017/CBO9780511976377 %CITAVIPICKER£10.1017/CBO9780511976377£Add to Citavi project by DOI£%)
-  * [Physical Processes in Clouds and Cloud Modeling](https://doi.org/10.1017/9781139049481 %CITAVIPICKER£10.1017/9781139049481£Add to Citavi project by DOI£%)
+  * [Physics and Chemistry of Clouds](https://doi.org/10.1017/CBO9780511976377)
+  * [Physical Processes in Clouds and Cloud Modeling](https://doi.org/10.1017/9781139049481)
   * [Severe Convective Storms and Tornadoes](https://www.springer.com/us/book/9783642053801)
   * [The Remote Sensing of Tropospheric Composition from Space](https://www.springer.com/us/book/9783642147906)
-  * [Differential Optical Absorption Spectroscopy](https://link.springer.com/book/10.1007/978-3-540-75776-4 %CITAVIPICKER£10.1007/978-3-540-75776-4£Add to Citavi project by DOI£%)
-  * [Inverse Methods for Atmospheric Sounding](https://doi.org/10.1142/3171 %CITAVIPICKER£10.1142/3171£Add to Citavi project by DOI£%)
+  * [Differential Optical Absorption Spectroscopy](https://link.springer.com/book/10.1007/978-3-540-75776-4)
+  * [Inverse Methods for Atmospheric Sounding](https://doi.org/10.1142/3171)
 
 * __Atmospheric Model__
-  * [Numerical Weather and Climate Prediction](https://doi.org/10.1017/CBO9780511763243 %CITAVIPICKER£10.1017/CBO9780511763243£Add to Citavi project by DOI£%)
+
+  * [Numerical Weather and Climate Prediction](https://doi.org/10.1017/CBO9780511763243)
   * [GEOSChem-python-tutorial](https://github.com/geoschem/GEOSChem-python-tutorial)
   * [PyGEOMET](https://github.com/pygeomet/PyGEOMET)
   * [PyBox](https://github.com/loftytopping/PyBox)
@@ -114,10 +131,13 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
   * [InMAP](https://github.com/spatialmodel/inmap)
 
 * __Satellite__
+
   * [Monitoring Atmospheric Composition (Online course)](https://www.futurelearn.com/courses/atmospheric-composition)
   * [VISIT](http://rammb.cira.colostate.edu/training/visit/)
+  * [Fundamentals of Remote Sensing](https://www.nrcan.gc.ca/node/9309)
+  * [Satellite Meteorology For Grade 7-12](http://cimss.ssec.wisc.edu/satmet/)
+  * [EUMeTrain Satellite Courses](http://eumetrain.org/courses.html)
+  * [GEOS-R Training](https://www.goes-r.gov/users/training/gsm.html)
+  * [Remote-Sensing-Earth-Observation-directory](https://github.com/joaofgoncalves/Remote-Sensing-Earth-Observation-directory)
   * [Awesome Satellite Imagery Datasets](https://github.com/chrieke/awesome-satellite-imagery-datasets)
   * [PythonFromSpace](https://github.com/kscottz/PythonFromSpace)
-  * [satpy](https://github.com/pytroll/satpy)
-  * [ccplot](https://github.com/peterkuma/ccplot)
-  * [pyModis](https://github.com/lucadelu/pyModis)
