@@ -11,6 +11,6 @@ disableToc: true
 
 <p align="center" style="font-size:20px">
   Enjoy your HPC account,
-  Check <a href="https://hpc-nuist-ap.github.io/account/accessing/">accessing methods now</a>!
+  Check <a href="https://hpc-nuist-ap.github.io/account/accessing/">accessing methods</a> now!
 </p>
 
