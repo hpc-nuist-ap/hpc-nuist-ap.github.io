@@ -33,10 +33,10 @@ title: "Application form"
       <label for="Group">Group (*)</label>
       <select name="Group" class="form-control" required="required">
         <option value="">Choose...</option>
-        <option>Undergraduate</option>
-        <option>Graduate</option>
-        <option>Doctor</option>
-        <option>Teacher</option>
+        <option>本科生</option>
+        <option>研究生</option>
+        <option>博士生</option>
+        <option>老 师</option>
       </select>
   </div>
 
