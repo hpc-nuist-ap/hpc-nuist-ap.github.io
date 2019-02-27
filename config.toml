@@ -30,5 +30,5 @@ weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='far fa-envelope'></i> Contact us"
-url = "mailto:xinzhang1215@gmail.com"
+url = "mailto:dqwl_hpc@nuist.edu.cn"
 weight = 30
