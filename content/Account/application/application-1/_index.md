@@ -6,12 +6,12 @@ title: "Application form"
 
   <div class="form-group">
     <label for="name">Chinese Name (*)</label>
-      <input type="text" name="name" class="form-control" placeholder="Your Chinese name" required>
+      <input type="text" name="Name" class="form-control" placeholder="Your Chinese name" required>
   </div>
 
   <div class="form-group">
     <label for="username">Username (*)</label>
-      <input type="text" name="username" class="form-control" placeholder="Created HPC username (short, similar to Chinese Name)" required>
+      <input type="text" name="Username" class="form-control" placeholder="Created HPC username (short, similar to Chinese Name)" required>
   </div>
 
   <div class="form-group">
@@ -26,7 +26,7 @@ title: "Application form"
 
   <div class="form-group">
       <label for="_replyto">Email address (*)</label>
-      <input type="email" name="_replyto" class="form-control" placeholder="Your email" required>
+      <input type="email" name="Email" class="form-control" placeholder="Your email" required>
   </div>
 
   <div class="form-group">
@@ -135,7 +135,7 @@ title: "Application form"
 
   <div class="form-group">
     <label for="date">Deadline (for student)</label>
-    <input type="date" min="2019-01-01" max="2050-01-01" step="7" class="form-control">
+    <input type="date" min="2019-01-01" max="2050-01-01" step="7" name='Deadline' class="form-control">
   </div>
 
   <button type="submit">Send</button>
