@@ -23,10 +23,10 @@ identifier = "ds"
 url = "https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io"
 weight = 10
 
-# [[menu.shortcuts]]
-# name = "<i class='fas fa-bullhorn'></i> Credits"
-# url = "/credits"
-# weight = 30
+[[menu.shortcuts]]
+name = "<i class='fas fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='far fa-envelope'></i> Contact us"

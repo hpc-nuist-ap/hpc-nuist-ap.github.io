@@ -135,7 +135,7 @@ title: "Application form"
 
   <div class="form-group">
     <label for="date">Deadline (for student)</label>
-    <input type="date" min="2019-01-01" max="2050-01-01" step="7" name='Deadline' class="form-control">
+    <input type="date" min="2019-01-01" max="2050-01-01" step="1" name='Deadline' class="form-control">
   </div>
 
   <button type="submit">Send</button>
