@@ -43,7 +43,7 @@ title: "Application form"
 
   <div id="sup" style="display:none;" class="form-group">
       <label for="Supervisor">Supervisor Category (导师*)</label>
-      <select name="Supervisor" class="form-control" required>
+      <select name="Supervisor" class="form-control">
         <option value="">Choose...</option>
         <!-- Sorted by initials-->
         <option>安俊琳</option>
@@ -153,10 +153,6 @@ title: "Application form"
       else{
           document.getElementById("sup").style.display = "none";
       }
-  }
-  function calDateMax()
-  {
-    document.getElementById('datePickerId').max = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0];;
   }
   </script>
 
