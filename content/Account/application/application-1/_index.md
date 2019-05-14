@@ -164,7 +164,7 @@ title: "Application form"
 </form>
 
 {{% notice warning %}}
-**Expiration**<br/>
+**Expiration (estimated by ID)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Undergraduate: 4 years<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Graduate: 4 years<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Ph.D.: 8 years<br/>
