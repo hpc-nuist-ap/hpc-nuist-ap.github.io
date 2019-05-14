@@ -135,30 +135,34 @@ title: "Application form"
       </select>
   </div>
 
-  <div id="Exp" style="display:none;" class="form-group" required>
-    <label for="date">Expiration (注销日期*)</label>
-    <input type="date" min="2019-01-01" max="2050-01-01" step="1" name='Expiration' class="form-control">
-  </div>
-
   <script>
   function grpSelectCheck(nameSelect)
   {
       if(nameSelect){
           admOptionValue = document.getElementById("stu").value;
           if(admOptionValue == nameSelect.value){
-              document.getElementById("Exp").style.display = "block";
               document.getElementById("sup").style.display = "block";
           }
           else{
-              document.getElementById("Exp").style.display = "none";
               document.getElementById("sup").style.display = "none";
           }
       }
       else{
-          document.getElementById("Exp").style.display = "none";
           document.getElementById("sup").style.display = "none";
       }
+  }
+  function calDateMax()
+  {
+    document.getElementById('datePickerId').max = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0];;
   }
   </script>
 
 </form>
+
+{{% notice warning %}}
+**Expiration**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Undergraduate: 4 years<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Graduate: 4 years<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Ph.D.: 6 years<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Teacher: no limit<br/>
+{{% /notice %}}
