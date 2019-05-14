@@ -37,7 +37,7 @@ title: "Application form"
     <option id="stu_1" value="0">Undergraduate(本科生)</option>
     <option id="stu_2" value="1">Graduate(研究生)</option>
     <option id="stu_3" value="2">Ph.D.(博士生)</option>
-    <option id="tch">Teacher(老 师)</option>
+    <option id="tch" value="3">Teacher(老 师)</option>
     </select>
   </div>
 
