@@ -32,7 +32,7 @@ title: "Application form"
 
   <div class="form-group">
     <label for="Group">Group (类别*)</label>
-    <select name="Group" class="form-control" onchange="grpSelectCheck(this);">
+    <select name="Group" class="form-control" onchange="grpSelectCheck(this);" required>
     <option value="">Choose...</option>
     <option id="stu_1" value="0">Undergraduate(本科生)</option>
     <option id="stu_2" value="1">Graduate(研究生)</option>
@@ -41,9 +41,9 @@ title: "Application form"
     </select>
   </div>
 
-  <div id="sup" style="display:none;" class="form-group" required>
+  <div id="sup" style="display:none;" class="form-group">
       <label for="Supervisor">Supervisor Category (导师*)</label>
-      <select name="Supervisor" class="form-control">
+      <select name="Supervisor" class="form-control" required>
         <option value="">Choose...</option>
         <!-- Sorted by initials-->
         <option>安俊琳</option>
