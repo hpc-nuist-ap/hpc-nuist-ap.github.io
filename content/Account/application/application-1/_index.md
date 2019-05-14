@@ -164,6 +164,6 @@ title: "Application form"
 **Expiration**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Undergraduate: 4 years<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Graduate: 4 years<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Ph.D.: 6 years<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Ph.D.: 8 years<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Teacher: no limit<br/>
 {{% /notice %}}
