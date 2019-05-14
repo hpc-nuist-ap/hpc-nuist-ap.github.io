@@ -34,9 +34,9 @@ title: "Application form"
     <label for="Group">Group (类别*)</label>
     <select name="Group" class="form-control" onchange="grpSelectCheck(this);">
     <option value="">Choose...</option>
-    <option id="stu" value="0">Undergraduate(本科生)</option>
-    <option id="stu" value="0">Graduate(研究生)</option>
-    <option id="stu" value="0">Ph.D.(博士生)</option>
+    <option id="stu_1" value="0">Undergraduate(本科生)</option>
+    <option id="stu_2" value="1">Graduate(研究生)</option>
+    <option id="stu_3" value="2">Ph.D.(博士生)</option>
     <option id="tch">Teacher(老 师)</option>
     </select>
   </div>
@@ -139,8 +139,11 @@ title: "Application form"
   function grpSelectCheck(nameSelect)
   {
       if(nameSelect){
-          admOptionValue = document.getElementById("stu").value;
-          if(admOptionValue == nameSelect.value){
+          Value = nameSelect.value
+          Value_1 = document.getElementById("stu_1").value;
+          Value_2 = document.getElementById("stu_2").value;
+          Value_3 = document.getElementById("stu_3").value;
+          if(Value == Value_1 | Value == Value_2 | Value == Value_3){
               document.getElementById("sup").style.display = "block";
           }
           else{
