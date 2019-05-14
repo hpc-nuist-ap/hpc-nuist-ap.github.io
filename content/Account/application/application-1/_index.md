@@ -2,46 +2,47 @@
 title: "Application form"
 ---
 
-  <form method="post" action="https://briskforms.com/go/4879b8573f7354021129ec75b541d6cf">
+
+<form>
 
   <div class="form-group">
-    <label for="name">Chinese Name (*)</label>
+    <label for="name">Chinese Name (中文名*)</label>
       <input type="text" name="Name" class="form-control" placeholder="Your Chinese name" required>
   </div>
 
   <div class="form-group">
-    <label for="username">Username (*)</label>
+    <label for="username">Username (用户名*)</label>
       <input type="text" name="Username" class="form-control" placeholder="Created HPC username (short, similar to Chinese Name)" required>
   </div>
 
   <div class="form-group">
-    <label for="ID">Student/Teacher ID (*)</label>
+    <label for="ID">Student/Teacher ID (学号*)</label>
       <input type="text" name="ID" class="form-control" placeholder="Your ID" required>
   </div>
 
   <div class="form-group">
-    <label for="Phone">Phone (*)</label>
+    <label for="Phone">Phone (手机号*)</label>
       <input type="text" name="Phone" class="form-control" placeholder="Your phone number" required>
   </div>
 
   <div class="form-group">
-      <label for="_replyto">Email address (*)</label>
+      <label for="_replyto">Email address (邮箱*)</label>
       <input type="email" name="Email" class="form-control" placeholder="Your email" required>
   </div>
 
   <div class="form-group">
-      <label for="Group">Group (*)</label>
-      <select name="Group" class="form-control" required="required">
-        <option value="">Choose...</option>
-        <option>本科生</option>
-        <option>研究生</option>
-        <option>博士生</option>
-        <option>老 师</option>
-      </select>
+    <label for="Group">Group (类别*)</label>
+    <select name="Group" class="form-control" onchange="grpSelectCheck(this);">
+    <option value="">Choose...</option>
+    <option id="stu" value="0">Undergraduate(本科生)</option>
+    <option id="stu" value="0">Graduate(研究生)</option>
+    <option id="stu" value="0">Ph.D.(博士生)</option>
+    <option id="tch">Teacher(老 师)</option>
+    </select>
   </div>
 
-  <div class="form-group">
-      <label for="Supervisor">Supervisor Category (for student)</label>
+  <div id="sup" style="display:none;" class="form-group" required>
+      <label for="Supervisor">Supervisor Category (导师*)</label>
       <select name="Supervisor" class="form-control">
         <option value="">Choose...</option>
         <!-- Sorted by initials-->
@@ -82,6 +83,7 @@ title: "Application form"
         <option>李煜斌</option>
         <option>李艳伟</option>
         <option>刘  超</option>
+        <option>刘玉宝</option>
         <option>刘晓莉</option>
         <option>刘银萍</option>
         <option>陆春松</option>
@@ -133,10 +135,30 @@ title: "Application form"
       </select>
   </div>
 
-  <div class="form-group">
-    <label for="date">Deadline (for student)</label>
-    <input type="date" min="2019-01-01" max="2050-01-01" step="1" name='Deadline' class="form-control">
+  <div id="Exp" style="display:none;" class="form-group" required>
+    <label for="date">Expiration (注销日期*)</label>
+    <input type="date" min="2019-01-01" max="2050-01-01" step="1" name='Expiration' class="form-control">
   </div>
 
-  <button type="submit">Send</button>
-  </form>
+  <script>
+  function grpSelectCheck(nameSelect)
+  {
+      if(nameSelect){
+          admOptionValue = document.getElementById("stu").value;
+          if(admOptionValue == nameSelect.value){
+              document.getElementById("Exp").style.display = "block";
+              document.getElementById("sup").style.display = "block";
+          }
+          else{
+              document.getElementById("Exp").style.display = "none";
+              document.getElementById("sup").style.display = "none";
+          }
+      }
+      else{
+          document.getElementById("Exp").style.display = "none";
+          document.getElementById("sup").style.display = "none";
+      }
+  }
+  </script>
+
+</form>
