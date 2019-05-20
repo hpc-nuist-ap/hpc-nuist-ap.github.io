@@ -53,7 +53,7 @@
 	"title": "Logs/Events",
 	"tags": [],
 	"description": "",
-	"content": "2019/02/11: Make this website public;\n2018/12/13: Intro: Tutorial of HPC and Shell;\n  Attachments   hpc_shell.ppt  (4568 ko)    "
+	"content": "2019/05/20: Remove the tsinghua mirror, add the certificate of wget and install git;\n2019/02/11: Make this website public;\n2018/12/13: Intro: Tutorial of HPC and Shell;\n  Attachments   hpc_shell.ppt  (4568 ko)    "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/account/application/",
@@ -165,7 +165,7 @@
 	"title": "Python",
 	"tags": [],
 	"description": "",
-	"content": " Python\u0026rsquo;s version is 2.6.8 by default. For scientific purpose, it\u0026rsquo;s lack of many packages and out-of-date version.\nWe\u0026rsquo;ve created our own Anaconda mirror and two environments (python2.7 and python3.6).\nThere\u0026rsquo;re two options for you: use installed environment and create your own python environment.\nUse installed one  Python2.7  add these lines to~/.profile:\n export PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate python27   Python3.6  add these lines to~/.profile:\n export PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate python36   Check installed packages   $ conda list # If you need more packages, plead add to the end of `/public/software/anaconda/requirements.txt`.  Create own one The mirror of Anaconda is located at these directory:\n/public/software/anaconda/archive /public/software/anaconda/pkgs  You can just run /public/software/anaconda/archive/\u0026lt;Anaconda****.sh\u0026gt; to install at your own directory.\nSet mirror If you choose to install your own anaconda, you should set mirror to speed up installing packages. Choose preferred method below and edit ~/.condarcas same as example:\n Local mirror (fastest, updated once a month)   allow_other_channels : false channel_alias: file://public/software/anaconda/pkgs channels: - free - main - pro - conda-forge offline: true   Tsinghua mirror (slow, lastest)   channels: - defaults - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ show_channel_urls: true  "
+	"content": " Python\u0026rsquo;s version is 2.6.8 by default. For scientific purpose, it\u0026rsquo;s lack of many packages and out-of-date version.\nWe\u0026rsquo;ve created our own Anaconda mirror and two environments (python2.7 and python3.6).\nSince the tsinghua mirror has been removed, we set up the Python environment based on official sources now.\nThere\u0026rsquo;re two options for you to use Python:\n Use installed environment; Create your own Python environment.  Use installed one  Python2.7  add these lines to ~/.profile:\n export PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate python27   Python3.6  add these lines to ~/.profile:\n export PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate python36   Check installed packages   $ conda list # If you need more packages, plead add to the end of `/public/software/anaconda/requirements.txt`.   Add more packages  If you can\u0026rsquo;t find specific package, you can edit /public/software/anaconda/requirements.txt according to the instruction at the end of that file.\nAfter the package is installed, you\u0026rsquo;ll get an email.\nCreate your own  Download the newest installer file from anaconda_archive or miniconda_archive. It\u0026rsquo;s better to install miniconda and create an virtual environment. Run the downloaded installer file to install anaconda to any new directory under your account. Add the PATH to the environment variable. Edit ~/.condarc to add more channels:  channels: - free - main - pro - conda-forge show_channel_urls: True allow_other_channels: True  "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/overview/resource-limits/",
@@ -210,11 +210,11 @@
 	"content": "In addition to the software provided on the cluster, you are welcome to install your own software.\nBefore installing software yourself, first check if it is already provided on the cluster.\nIf you are installing software exclusively for your use, you can install it in your Home directory (/public/home/\u0026lt;username\u0026gt;).\nIf you will be doing a lot of software installation, you may want to add sub-directories for sources (source files downloaded), softwares (the installed software), scripts (if you want to document and routinize your installation process using a script \u0026ndash; which is recommended).\nIn any case, be cognizant of space limitations in your Home directory (see quota).\n Xin Zhang has ever installed several packages. You can check this part of his blog for instruction.\n "
 },
 {
-	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/",
-	"title": "Softwares",
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/data/",
+	"title": "Data",
 	"tags": [],
 	"description": "",
-	"content": "HPC maintains software, compilers, and libraries in the directory /public/software and /datadir1/software.\nTo access much of the software available on the AP cluster - ranging from compilers and interpreters to statistical analysis and visualization software, and much more - you\u0026rsquo;ll need to set ENVs by yourself according to the Load section.\nWe\u0026rsquo;ll use Environment Modules to manage softwares soon. It\u0026rsquo;ll be much easier and more convenient \u0026hellip; Anyway, it\u0026rsquo;s better to understand ENVs before using module.\n "
+	"content": "We downloaded some public data for all users:\n FNL\nLocation: /public/FNL\n Geog data\nLocation: /public1/WRF-DATA\n Figures of NMC\nLocation: /public/NMC\nSource code: https://github.com/zxdawn/nmc-crawler\n  If you want more public data, please contact us.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/environment-variables/persisting-envs/",
@@ -222,6 +222,13 @@
 	"tags": [],
 	"description": "",
 	"content": "To persist ENVs, just put the commands in one of three config files mentioned before, as these files will be executed when ever you access a shell.\nPlease check the template written by Stefaan Lippens, especially the .profile part.\n$PATH and $LD_LIBRARY_PATH are the most important for compiling models.\nPlease check these two tutorials in detail: PATH_tutorial and LD_LIBRARY_PATH_tutorial.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/",
+	"title": "Softwares",
+	"tags": [],
+	"description": "",
+	"content": "HPC maintains software, compilers, and libraries in the directory /public/software and /datadir1/software.\nTo access much of the software available on the AP cluster - ranging from compilers and interpreters to statistical analysis and visualization software, and much more - you\u0026rsquo;ll need to set ENVs by yourself according to the Load section.\nWe\u0026rsquo;ll use Environment Modules to manage softwares soon. It\u0026rsquo;ll be much easier and more convenient \u0026hellip; Anyway, it\u0026rsquo;s better to understand ENVs before using module.\n "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/running-jobs/",

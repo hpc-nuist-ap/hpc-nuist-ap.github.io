@@ -123,11 +123,15 @@
   </url>
   
   <url>
-    <loc>https://hpc-nuist-ap.github.io/users-guide/softwares/</loc>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/data/</loc>
   </url>
   
   <url>
     <loc>https://hpc-nuist-ap.github.io/users-guide/environment-variables/persisting-envs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hpc-nuist-ap.github.io/users-guide/softwares/</loc>
   </url>
   
   <url>

@@ -11,19 +11,19 @@
     <title>Python :: HPC</title>
 
     
-    <link href="/css/nucleus.css?1557837724" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1557837724" rel="stylesheet">
-    <link href="/css/hybrid.css?1557837724" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1557837724" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1557837724" rel="stylesheet">
-    <link href="/css/auto-complete.css?1557837724" rel="stylesheet">
-    <link href="/css/theme.css?1557837724" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1557837724" rel="stylesheet">
+    <link href="/css/nucleus.css?1558343608" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1558343608" rel="stylesheet">
+    <link href="/css/hybrid.css?1558343608" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1558343608" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1558343608" rel="stylesheet">
+    <link href="/css/auto-complete.css?1558343608" rel="stylesheet">
+    <link href="/css/theme.css?1558343608" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1558343608" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1557837724" rel="stylesheet">
+      <link href="/css/theme-blue.css?1558343608" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1557837724"></script>
+    <script src="/js/jquery-2.x.min.js?1558343608"></script>
 
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{
@@ -51,14 +51,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1557837724"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1557837724"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1558343608"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1558343608"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/hpc-nuist-ap.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1557837724"></script>
+<script type="text/javascript" src="/js/search.js?1558343608"></script>
 
     
   </div>
@@ -632,6 +632,30 @@
  
   
     
+    <li data-nav-id="/users-guide/data/" title="Data" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/users-guide/data/">
+          Data
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
     <li data-nav-id="/users-guide/softwares/" title="Softwares" class="dd-item 
         parent
         
@@ -1128,8 +1152,7 @@
 <li>
 <ul>
 <li><a href="#use-installed-one">Use installed one</a></li>
-<li><a href="#create-own-one">Create own one</a></li>
-<li><a href="#set-mirror">Set mirror</a></li>
+<li><a href="#create-your-own">Create your own</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1155,9 +1178,16 @@
 
 <p>Python&rsquo;s version is 2.6.8 by default. For scientific purpose, it&rsquo;s lack of many packages and out-of-date version.</p>
 
-<p>We&rsquo;ve created our <strong>own Anaconda mirror and two environments (python2.7 and python3.6)</strong>.</p>
+<p><del>We&rsquo;ve created our <strong>own Anaconda mirror and two environments (python2.7 and python3.6)</strong>.</del></p>
 
-<p>There&rsquo;re two options for you: use installed environment and create your own python environment.</p>
+<p>Since the tsinghua mirror has been <a href="https://mirror.tuna.tsinghua.edu.cn/news/close-anaconda-service/">removed</a>, we set up the Python environment based on official sources now.</p>
+
+<p>There&rsquo;re two options for you to use Python:</p>
+
+<ol>
+<li>Use installed environment;</li>
+<li>Create your own Python environment.</li>
+</ol>
 
 <h3 id="use-installed-one">Use installed one</h3>
 
@@ -1165,7 +1195,7 @@
 <li><strong>Python2.7</strong></li>
 </ul>
 
-<p>add these lines to<code>~/.profile</code>:</p>
+<p>add these lines to <code>~/.profile</code>:</p>
 
 <pre><code>  export PATH=/public/software/anaconda/anaconda3/bin:$PATH
   . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
@@ -1176,7 +1206,7 @@
 <li><strong>Python3.6</strong></li>
 </ul>
 
-<p>add these lines to<code>~/.profile</code>:</p>
+<p>add these lines to <code>~/.profile</code>:</p>
 
 <pre><code>  export PATH=/public/software/anaconda/anaconda3/bin:$PATH
   . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
@@ -1191,44 +1221,30 @@
   # If you need more packages, plead add to the end of `/public/software/anaconda/requirements.txt`.
 </code></pre>
 
-<h3 id="create-own-one">Create own one</h3>
-
-<p>The mirror of Anaconda is located at these directory:</p>
-
-<pre><code>/public/software/anaconda/archive
-/public/software/anaconda/pkgs
-</code></pre>
-
-<p>You can just run <code>/public/software/anaconda/archive/&lt;Anaconda****.sh&gt;</code> to install at your own directory.</p>
-
-<h3 id="set-mirror">Set mirror</h3>
-
-<p>If you choose to install your own anaconda, you should set mirror to speed up installing packages. Choose preferred method below and edit <code>~/.condarc</code>as same as example:</p>
-
 <ul>
-<li>Local mirror (fastest, updated once a month)</li>
+<li><strong>Add more packages</strong></li>
 </ul>
 
-<pre><code>  allow_other_channels : false
-  channel_alias: file://public/software/anaconda/pkgs
-  channels:
-    - free
-    - main
-    - pro
-    - conda-forge
-  offline: true
-</code></pre>
+<p>If you can&rsquo;t find specific package, you can edit <code>/public/software/anaconda/requirements.txt</code> according to the instruction at the end of that file.</p>
 
-<ul>
-<li>Tsinghua mirror (slow, lastest)</li>
-</ul>
+<p>After the package is installed, you&rsquo;ll get an email.</p>
 
-<pre><code>  channels:
-    - defaults
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-  show_channel_urls: true
+<h3 id="create-your-own">Create your own</h3>
+
+<ol>
+<li>Download the newest installer file from <a href="https://repo.anaconda.com/archive/">anaconda_archive</a> or <a href="https://repo.anaconda.com/miniconda/">miniconda_archive</a>. It&rsquo;s better to install miniconda and create an <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">virtual environment</a>.</li>
+<li>Run the downloaded installer file to install anaconda to any new directory under your account.</li>
+<li>Add the PATH to the environment variable.</li>
+<li>Edit <code>~/.condarc</code> to add more channels:</li>
+</ol>
+
+<pre><code>channels:
+  - free
+  - main
+  - pro
+  - conda-forge
+show_channel_urls: True
+allow_other_channels: True
 </code></pre>
 
 
@@ -1619,6 +1635,22 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1881,20 +1913,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1557837724"></script>
-    <script src="/js/perfect-scrollbar.min.js?1557837724"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1557837724"></script>
-    <script src="/js/jquery.sticky.js?1557837724"></script>
-    <script src="/js/featherlight.min.js?1557837724"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1557837724"></script>
-    <script src="/js/highlight.pack.js?1557837724"></script>
+    <script src="/js/clipboard.min.js?1558343608"></script>
+    <script src="/js/perfect-scrollbar.min.js?1558343608"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1558343608"></script>
+    <script src="/js/jquery.sticky.js?1558343608"></script>
+    <script src="/js/featherlight.min.js?1558343608"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1558343608"></script>
+    <script src="/js/highlight.pack.js?1558343608"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1557837724"></script>
-    <script src="/js/learn.js?1557837724"></script>
-    <script src="/js/hugo-learn.js?1557837724"></script>
+    <script src="/js/modernizr.custom.71422.js?1558343608"></script>
+    <script src="/js/learn.js?1558343608"></script>
+    <script src="/js/hugo-learn.js?1558343608"></script>
 
-    <link href="/mermaid/mermaid.css?1557837724" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1557837724"></script>
+    <link href="/mermaid/mermaid.css?1558343608" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1558343608"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
