@@ -3,7 +3,7 @@ title: "Data"
 weight: 25
 ---
 
-We downloaded some public data for all users:
+We've downloaded some public data for all users:
 
 - **FNL**
 
@@ -20,5 +20,5 @@ We downloaded some public data for all users:
     Source code: <https://github.com/zxdawn/nmc-crawler>
 
 {{% notice note %}}
-If you want more public data, please [contact us](mailto:dqwl_hpc@nuist.edu.cn).
+If you need more public data, please [contact us](mailto:dqwl_hpc@nuist.edu.cn).
 {{% /notice %}}
