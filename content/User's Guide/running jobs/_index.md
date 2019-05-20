@@ -1,6 +1,6 @@
 ---
 title: "Running Jobs"
-weight: 25
+weight: 30
 ---
 
 To run a job on the HPC cluster, you will need to set up a **Portable Batch System (PBS) file**.
