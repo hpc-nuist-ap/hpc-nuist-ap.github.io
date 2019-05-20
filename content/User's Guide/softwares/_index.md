@@ -1,6 +1,6 @@
 ---
 title: "Softwares"
-weight: 20
+weight: 25
 ---
 
 HPC maintains software, compilers, and libraries in the directory `/public/software` and `/datadir1/software`.

@@ -5,15 +5,20 @@ weight: 15
 
 Python's version is 2.6.8 by default. For scientific purpose, it's lack of many packages and out-of-date version.
 
-We've created our **own Anaconda mirror and two environments (python2.7 and python3.6)**.
+~~We've created our **own Anaconda mirror and two environments (python2.7 and python3.6)**.~~
 
-There're two options for you: use installed environment and create your own python environment.
+Since the tsinghua mirror has been [removed](https://mirror.tuna.tsinghua.edu.cn/news/close-anaconda-service/), we set up the Python environment based on official sources now.
+
+There're two options for you to use Python:
+
+1. Use installed environment;
+2. Create your own Python environment.
 
 ### Use installed one
 
 - **Python2.7**
 
-  add these lines to`~/.profile`:
+  add these lines to `~/.profile`:
 
   ```
   export PATH=/public/software/anaconda/anaconda3/bin:$PATH
@@ -23,7 +28,7 @@ There're two options for you: use installed environment and create your own pyth
 
 - **Python3.6**
 
-  add these lines to`~/.profile`:
+  add these lines to `~/.profile`:
 
   ```
   export PATH=/public/software/anaconda/anaconda3/bin:$PATH
@@ -38,41 +43,25 @@ There're two options for you: use installed environment and create your own pyth
   # If you need more packages, plead add to the end of `/public/software/anaconda/requirements.txt`.
   ```
 
-### Create own one
+- **Add more packages**
 
-The mirror of Anaconda is located at these directory:
+  If you can't find specific package, you can edit `/public/software/anaconda/requirements.txt` according to the instruction at the end of that file.
+
+  After the package is installed, you'll get an email.
+
+### Create your own
+
+1. Download the newest installer file from [anaconda_archive](https://repo.anaconda.com/archive/) or [miniconda_archive](https://repo.anaconda.com/miniconda/). It's better to install miniconda and create an [virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+2. Run the downloaded installer file to install anaconda to any new directory under your account.
+3. Add the PATH to the environment variable.
+4. Edit `~/.condarc  ` to add more channels:
 
 ```
-/public/software/anaconda/archive
-/public/software/anaconda/pkgs
+channels:
+  - free
+  - main
+  - pro
+  - conda-forge
+show_channel_urls: True
+allow_other_channels: True
 ```
-
-You can just run `/public/software/anaconda/archive/<Anaconda****.sh>` to install at your own directory.
-
-### Set mirror
-
-If you choose to install your own anaconda, you should set mirror to speed up installing packages. Choose preferred method below and edit `~/.condarc  `as same as example:
-
-- Local mirror (fastest, updated once a month)
-
-  ```
-  allow_other_channels : false
-  channel_alias: file://public/software/anaconda/pkgs
-  channels:
-    - free
-    - main
-    - pro
-    - conda-forge
-  offline: true
-  ```
-
-- Tsinghua mirror (slow, lastest)
-
-  ```
-  channels:
-    - defaults
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-    - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-  show_channel_urls: true
-  ```
