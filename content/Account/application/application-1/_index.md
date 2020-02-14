@@ -3,7 +3,7 @@ title: "Application form"
 ---
 
 
-<form method="post" action="https://briskforms.com/go/4879b8573f7354021129ec75b541d6cf">
+<form method="post" action="https://forms.un-static.com/forms/77343d9fb7626fdc77188a256efc92e3856eda44">
 
   <div class="form-group">
     <label for="name">Chinese Name (中文名*)</label>
