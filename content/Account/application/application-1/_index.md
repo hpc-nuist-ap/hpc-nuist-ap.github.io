@@ -11,7 +11,7 @@ title: "Application form"
 
   <div class="form-group">
     <label for="username">Username (*)</label>
-      <input type="text" name="Username" class="form-control" placeholder="Created HPC username (short, similar to Chinese Name)" required>
+      <input type="text" name="username" class="form-control" placeholder="Created HPC username (short in English,, similar to Chinese Name)" required>
   </div>
 
   <div class="form-group">
@@ -101,6 +101,7 @@ title: "Application form"
         <option>王红磊</option>
         <option>王  泓</option>
         <option>王剑庚</option>
+        <option>王建栋</option>
         <option>王金虎</option>
         <option>王彦辉</option>
         <option>王咏薇</option>
