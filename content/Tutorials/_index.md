@@ -20,8 +20,10 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
 
 * __Python (Advanced)__
 
+  * [dask-tutorial](https://github.com/dask/dask-tutorial)
   * [ams-ml-python-course](https://github.com/djgagne/ams-ml-python-course)
   * [fastai](https://github.com/fastai/fastai)
+  * [Dive into Deep Learning](https://github.com/d2l-ai/d2l-en)
   * [Scipy 2018 scikit-learn tutorial](https://github.com/amueller/scipy-2018-sklearn)
   * [Introduction to Machine Learning for Coders](https://course.fast.ai/ml)
   * [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
@@ -87,6 +89,8 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
   * [learnGitBranching](https://github.com/pcottle/learnGitBranching)
   * [Git Cheat Sheet](https://github.com/arslanbilal/git-cheat-sheet)
   * [git tips](https://github.com/git-tips/tips)
+  * [Git Submodules](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)
+  * [Git Workflow](https://www.asmeurer.com/git-workflow/)
 
 * __Coding/Learning Group__
 
@@ -103,6 +107,8 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
 
 * __Math__
 
+  * [Stat Terk](https://stattrek.com/)
+  * [STAT 501](https://newonlinecourses.science.psu.edu/stat501/)
   * [Applied Numerical Computing](http://www.seas.ucla.edu/~vandenbe/ee133a.html)
 
 * __Atmosphere__
@@ -141,3 +147,19 @@ Some useful and excellent tutorials/books/links. This is part of [Xin Zhang](htt
   * [Remote-Sensing-Earth-Observation-directory](https://github.com/joaofgoncalves/Remote-Sensing-Earth-Observation-directory)
   * [Awesome Satellite Imagery Datasets](https://github.com/chrieke/awesome-satellite-imagery-datasets)
   * [PythonFromSpace](https://github.com/kscottz/PythonFromSpace)
+
+* __Radar__
+  * [Radar Meteorology: A First Course](https://doi.org/10.1002/9781118432662)
+
+* __Guitar__
+
+  * [justinguitar](https://www.justinguitar.com/)
+  * [GoliathGuitar](http://www.goliathguitartutorials.com/)
+
+* __Design__
+
+  * [Photopea](https://github.com/photopea/photopea)
+  * [Chevereto-Free](https://github.com/Chevereto/Chevereto-Free)
+  * [Lychee](https://github.com/LycheeOrg/Lychee)
+  * Photoshop One-on-one
+  * Illustrator One-on-one
