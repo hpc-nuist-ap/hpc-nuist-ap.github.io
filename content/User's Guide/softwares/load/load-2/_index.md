@@ -7,7 +7,7 @@ Python's version is 2.6.8 by default. For scientific purpose, it's lack of many 
 
 ~~We've created our **own Anaconda mirror and two environments (python2.7 and python3.6)**.~~
 
-Since the tsinghua mirror has been [removed](https://mirror.tuna.tsinghua.edu.cn/news/close-anaconda-service/), we set up the Python environment based on official sources now.
+Since the tsinghua mirror has been [removed](https://mirror.tuna.tsinghua.edu.cn/news/close-anaconda-service/) once, we set up the Python environment based on official sources now.
 
 There're two options for you to use Python:
 
@@ -15,16 +15,6 @@ There're two options for you to use Python:
 2. Create your own Python environment.
 
 ### Use installed one
-
-- **Python2.7**
-
-  add these lines to `~/.profile`:
-
-  ```
-  export PATH=/public/software/anaconda/anaconda3/bin:$PATH
-  . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
-  conda activate python27
-  ```
 
 - **Python3.6**
 
