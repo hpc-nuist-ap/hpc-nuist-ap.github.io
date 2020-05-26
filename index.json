@@ -158,7 +158,7 @@
 	"title": "Load",
 	"tags": [],
 	"description": "",
-	"content": "If you want to load unloaded/preferred software, please check directories (/public/software and /datadir1/software) and set corresponding ones in config files.\n Matlab   Python   "
+	"content": "If you want to load unloaded/preferred software, please check directories (/public/software and /datadir1/software) and set corresponding ones in config files.\n Matlab   Python   NCL   "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/load/load-2/",
@@ -208,6 +208,13 @@
 	"tags": [],
 	"description": "",
 	"content": "In addition to the software provided on the cluster, you are welcome to install your own software.\nBefore installing software yourself, first check if it is already provided on the cluster.\nIf you are installing software exclusively for your use, you can install it in your Home directory (/public/home/\u0026lt;username\u0026gt;).\nIf you will be doing a lot of software installation, you may want to add sub-directories for sources (source files downloaded), softwares (the installed software), scripts (if you want to document and routinize your installation process using a script \u0026ndash; which is recommended).\nIn any case, be cognizant of space limitations in your Home directory (see quota).\n Xin Zhang has ever installed several packages. You can check this part of his blog for instruction.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/load/load-3/",
+	"title": "NCL",
+	"tags": [],
+	"description": "",
+	"content": "We have installed NCL in anaconda.\nYou can just add these lines to ~/.profile or ~/.bashrc:\nexport PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate ncl  "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/data/",

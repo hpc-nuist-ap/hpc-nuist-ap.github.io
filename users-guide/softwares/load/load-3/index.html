@@ -8,7 +8,7 @@
 
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
-    <title>Python :: HPC</title>
+    <title>NCL :: HPC</title>
 
     
     <link href="/css/nucleus.css?1590500625" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/users-guide/softwares/load/load-2/">
+  <body class="" data-url="/users-guide/softwares/load/load-3/">
     <nav id="sidebar" class="">
 
 
@@ -759,8 +759,8 @@
   
     
     <li data-nav-id="/users-guide/softwares/load/load-2/" title="Python" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/users-guide/softwares/load/load-2/">
@@ -783,8 +783,8 @@
   
     
     <li data-nav-id="/users-guide/softwares/load/load-3/" title="NCL" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/users-guide/softwares/load/load-3/">
@@ -1113,7 +1113,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/softwares/load/load-2/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/softwares/load/load-3/_index.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1152,7 +1152,7 @@
             
           
           
-            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/softwares/'>Softwares</a> > <a href='/users-guide/softwares/load/'>Load</a> > Python
+            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/softwares/'>Softwares</a> > <a href='/users-guide/softwares/load/'>Load</a> > NCL
           
          
           
@@ -1169,18 +1169,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#use-installed-one">Use installed one</a></li>
-<li><a href="#create-your-own">Create your own</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -1192,72 +1181,19 @@
         
         <div id="body-inner">
           
-            <h1>Python</h1>
+            <h1>NCL</h1>
           
 
         
 
 
+<p>We have installed NCL in anaconda.</p>
 
+<p>You can just add these lines to <code>~/.profile</code> or <code>~/.bashrc</code>:</p>
 
-<p>Python&rsquo;s version is 2.6.8 by default. For scientific purpose, it&rsquo;s lack of many packages and out-of-date version.</p>
-
-<p><del>We&rsquo;ve created our <strong>own Anaconda mirror and two environments (python2.7 and python3.6)</strong>.</del></p>
-
-<p>Since the tsinghua mirror has been <a href="https://mirror.tuna.tsinghua.edu.cn/news/close-anaconda-service/">removed</a> once, we set up the Python environment based on official sources now.</p>
-
-<p>There&rsquo;re two options for you to use Python:</p>
-
-<ol>
-<li>Use installed environment;</li>
-<li>Create your own Python environment.</li>
-</ol>
-
-<h3 id="use-installed-one">Use installed one</h3>
-
-<ul>
-<li><strong>Python3.6</strong></li>
-</ul>
-
-<p>add these lines to <code>~/.profile</code>:</p>
-
-<pre><code>  export PATH=/public/software/anaconda/anaconda3/bin:$PATH
-  . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
-  conda activate python36
-</code></pre>
-
-<ul>
-<li><strong>Check installed packages</strong></li>
-</ul>
-
-<pre><code>  $ conda list
-  # If you need more packages, plead add to the end of `/public/software/anaconda/requirements.txt`.
-</code></pre>
-
-<ul>
-<li><strong>Add more packages</strong></li>
-</ul>
-
-<p>If you can&rsquo;t find specific package, you can edit <code>/public/software/anaconda/requirements.txt</code> according to the instruction at the end of that file.</p>
-
-<p>After the package is installed, you&rsquo;ll get an email.</p>
-
-<h3 id="create-your-own">Create your own</h3>
-
-<ol>
-<li>Download the newest installer file from <a href="https://repo.anaconda.com/archive/">anaconda_archive</a> or <a href="https://repo.anaconda.com/miniconda/">miniconda_archive</a>. It&rsquo;s better to install miniconda and create an <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">virtual environment</a>.</li>
-<li>Run the downloaded installer file to install anaconda to any new directory under your account.</li>
-<li>Add the PATH to the environment variable.</li>
-<li>Edit <code>~/.condarc</code> to add more channels:</li>
-</ol>
-
-<pre><code>channels:
-  - free
-  - main
-  - pro
-  - conda-forge
-show_channel_urls: True
-allow_other_channels: True
+<pre><code>export PATH=/public/software/anaconda/anaconda3/bin:$PATH
+. /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
+conda activate ncl
 </code></pre>
 
 
@@ -1734,7 +1670,6 @@ allow_other_channels: True
             
                 
                     
-                    
                 
                 
 
@@ -1751,8 +1686,6 @@ allow_other_channels: True
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1772,6 +1705,9 @@ allow_other_channels: True
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1929,10 +1865,10 @@ allow_other_channels: True
 	 
 	 
 		
-			<a class="nav nav-prev" href="/users-guide/softwares/load/load-1/" title="Matlab"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/users-guide/softwares/load/load-2/" title="Python"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/users-guide/softwares/load/load-3/" title="NCL" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/users-guide/softwares/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
