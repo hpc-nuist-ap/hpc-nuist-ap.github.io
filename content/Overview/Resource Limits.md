@@ -22,19 +22,19 @@ In general, jobs will be scheduled and run on a first-come, first-served basis w
 ### General Partition Rules
 
 | Partition Name | Maximum Jobs Queued | Maximum Node Count | Maximum Wall Time | Maximum Jobs per User |
-| :--------------: | :-----------------: | :----------------: | :---------------: | --------------------- |
-| low            |                  |       |                  |                       |
-| high |  |  |  | |
-| Addnode |  |  |  | |
-| zhao |  |  |  | |
+| :------------: | :-----------------: | :----------------: | :---------------: | --------------------- |
+|      low       |                     |                    |                   |                       |
+|      high      |                     |                    |                   |                       |
+|    Addnode     |                     |                    |                   |                       |
+|      zhao      |                     |                    |                   |                       |
 
 ### Disk Space
 
 | Root of home directory     | Quota |
 | -------------------------- | ----- |
 | `/pulic/home/<username>`   | 300 G |
-| `/public1/home/<username>` | 1.5 T |
-| `/datadir1/<username>`     | 2.5 T |
+| `/public1/home/<username>` | 1 T   |
+| `/datadir1/<username>`     | 1.5 T |
 
 {{% notice note %}}
 Please check your home directory by `echo $HOME` and check used disk space by `du -sh $HOME`.
