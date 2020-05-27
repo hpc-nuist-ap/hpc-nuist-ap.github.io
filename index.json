@@ -53,7 +53,7 @@
 	"title": "Logs/Events",
 	"tags": [],
 	"description": "",
-	"content": "2019/05/20: Remove the tsinghua mirror, add the certificate of wget and install git;\n2019/02/11: Make this website public;\n2018/12/13: Intro: Tutorial of HPC and Shell;\n  Attachments   hpc_shell.ppt  (4568 ko)    "
+	"content": "2020/05/28: Tutorial of Git\n2019/05/20: Remove the Tsinghua mirror, add the certificate of wget and install git;\n2019/02/11: Make this website public;\n2018/12/13: Intro: Tutorial of HPC and Shell;\n  Attachments   git_tutorial.ppt  (16891 ko)   hpc_shell.ppt  (4568 ko)    "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/account/application/",
