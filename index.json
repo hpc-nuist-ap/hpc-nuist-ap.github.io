@@ -158,7 +158,7 @@
 	"title": "Load",
 	"tags": [],
 	"description": "",
-	"content": "If you want to load unloaded/preferred software, please check directories (/public/software and /datadir1/software) and set corresponding ones in config files.\n Matlab   Python   NCL   "
+	"content": "If you want to load unloaded/preferred software, please check directories (/public/software and /datadir1/software) and set corresponding ones in config files.\n Matlab   Python   NCL   Git   "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/load/load-2/",
@@ -222,6 +222,13 @@
 	"tags": [],
 	"description": "",
 	"content": "We\u0026rsquo;ve downloaded some public data for all users:\n FNL\nLocation: /public/FNL\n Geog data\nLocation: /public1/WRF-DATA\n Figures of NMC\nLocation: /public/NMC\nSource code: https://github.com/zxdawn/nmc-crawler\n  If you need more public data, please contact us.\n "
+},
+{
+	"uri": "https://hpc-nuist-ap.github.io/users-guide/softwares/load/load-4/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": "We have installed Git in anaconda.\nYou can just add these lines to ~/.profile or ~/.bashrc:\nexport PATH=/public/software/anaconda/anaconda3/bin:$PATH . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh conda activate python37  "
 },
 {
 	"uri": "https://hpc-nuist-ap.github.io/users-guide/environment-variables/persisting-envs/",

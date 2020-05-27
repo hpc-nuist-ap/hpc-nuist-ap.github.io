@@ -8,7 +8,7 @@
 
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
-    <title>Defaults :: HPC</title>
+    <title>Git :: HPC</title>
 
     
     <link href="/css/nucleus.css?1590569202" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/users-guide/softwares/defaults/">
+  <body class="" data-url="/users-guide/softwares/load/load-4/">
     <nav id="sidebar" class="">
 
 
@@ -684,8 +684,8 @@
   
     
     <li data-nav-id="/users-guide/softwares/defaults/" title="Defaults" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/users-guide/softwares/defaults/">
@@ -708,7 +708,7 @@
   
     
     <li data-nav-id="/users-guide/softwares/load/" title="Load" class="dd-item 
-        
+        parent
         
         
         ">
@@ -807,8 +807,8 @@
   
     
     <li data-nav-id="/users-guide/softwares/load/load-4/" title="Git" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/users-guide/softwares/load/load-4/">
@@ -1137,7 +1137,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/softwares/defaults/_index.md" target="blank">
+                    <a class="github-link" title='Edit this page' href="https://github.com/hpc-nuist-ap/hpc-nuist-ap.github.io/tree/source/content/User%27s%20Guide/softwares/load/load-4/_index.md" target="blank">
                       <i class="fas fa-code-branch"></i>
                       <span id="top-github-link-text">Edit this page</span>
                     </a>
@@ -1172,7 +1172,13 @@
             
           
           
-            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/softwares/'>Softwares</a> > Defaults
+            
+            
+          
+          
+            <a href='/'>hpc-nuist-ap</a> > <a href='/users-guide/'>User's Guide</a> > <a href='/users-guide/softwares/'>Softwares</a> > <a href='/users-guide/softwares/load/'>Load</a> > Git
+          
+         
           
          
           
@@ -1199,89 +1205,20 @@
         
         <div id="body-inner">
           
-            <h1>Defaults</h1>
+            <h1>Git</h1>
           
 
         
 
 
-<p>You can check the default ENVs by typing <code>env</code> in the terminal. It&rsquo;s Dazzled if all are printed &hellip;</p>
+<p>We have installed Git in anaconda.</p>
 
-<p>Here&rsquo;s the trick to check what you want:</p>
+<p>You can just add these lines to <code>~/.profile</code> or <code>~/.bashrc</code>:</p>
 
-<pre><code>$ echo $PATH
-# Some important ones:
-#	$LIBRARY_PATH, $PATH, $JASPERINC, LD_LIBRARY_PATH
+<pre><code>export PATH=/public/software/anaconda/anaconda3/bin:$PATH
+. /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
+conda activate python37
 </code></pre>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-    	
-    	**Click to see the result:**
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        <pre><code>/public/software/mathlib/ncl/bin:/public/software/mpi/openmpi/1.6.5/intel/bin:/opt/gridview//pbs/dispatcher-sched/bin:/opt/gridview//pbs/dispatcher-sched/sbin:/opt/gridview//pbs/dispatcher/bin/lsf_cmd:/opt/gridview//pbs/dispatcher/bin:/opt/gridview//pbs/dispatcher/sbin:/public/software/compiler/composer_xe_2013_sp1.0.080/bin/intel64:/opt/gridview/clusquota//bin:/opt/gridview/clusquota//sbin:/opt/gridview//clusconf/bin:/public/software/ImageMagick/bin:/public/home/test/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/opt/kde3/bin:/opt/ibutils/bin:/usr/java/jdk1.6.0_27//bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/public/software/compiler/pgi/linux86-64/10.6/bin:/public/software/mathlib/cdo/bin:/public/software/mathlib/netcdf/4.3.0/intel/bin:/public/software/mathlib/ncview-2.1.5/bin:/public/software/ncl-6.4.0/bin/:/public/software/mathlib/nco/4.3.7/bin:/public/software/grads/2.0.2/bin
-</code></pre>
-
-    </div>
-</div>
-
-<p>To display the result line by line:</p>
-
-<pre><code>$ sed 's/:/\n/g' &lt;&lt;&lt; &quot;$PATH&quot;
-</code></pre>
-
-<div class="expand">
-    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
-        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
-        <span>
-        
-    	
-    	**Click to see the result:**
-    	
-    	</span>
-    </div>
-    <div class="expand-content" style="display: none;">
-        <pre><code>/public/software/mathlib/ncl/bin
-/public/software/mpi/openmpi/1.6.5/intel/bin
-/opt/gridview//pbs/dispatcher-sched/bin
-/opt/gridview//pbs/dispatcher-sched/sbin
-/opt/gridview//pbs/dispatcher/bin/lsf_cmd
-/opt/gridview//pbs/dispatcher/bin
-/opt/gridview//pbs/dispatcher/sbin
-/public/software/compiler/composer_xe_2013_sp1.0.080/bin/intel64
-/opt/gridview/clusquota//bin
-/opt/gridview/clusquota//sbin
-/opt/gridview//clusconf/bin
-/public/software/ImageMagick/bin
-/public/home/test/bin
-/usr/local/bin
-/usr/bin
-/bin
-/usr/bin/X11
-/usr/X11R6/bin
-/usr/games
-/opt/kde3/bin
-/opt/ibutils/bin
-/usr/java/jdk1.6.0_27//bin
-/usr/lib/mit/bin
-/usr/lib/mit/sbin
-/public/software/compiler/pgi/linux86-64/10.6/bin
-/public/software/mathlib/cdo/bin
-/public/software/mathlib/netcdf/4.3.0/intel/bin
-/public/software/mathlib/ncview-2.1.5/bin
-/public/software/ncl-6.4.0/bin/
-/public/software/mathlib/nco/4.3.7/bin
-/public/software/grads/2.0.2/bin
-</code></pre>
-
-    </div>
-</div>
 
 
 <footer class=" footline" >
@@ -1703,40 +1640,8 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1753,6 +1658,25 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1797,6 +1721,23 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1804,6 +1745,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1961,10 +1905,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/users-guide/softwares/" title="Softwares"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/users-guide/softwares/load/load-3/" title="NCL"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/users-guide/softwares/load/" title="Load" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/users-guide/softwares/installation/" title="Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
