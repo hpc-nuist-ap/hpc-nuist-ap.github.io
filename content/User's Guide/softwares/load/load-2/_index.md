@@ -16,14 +16,14 @@ There're two options for you to use Python:
 
 ### Use installed one
 
-- **Python3.6**
+- **Python3.7**
 
   add these lines to `~/.profile`:
 
   ```
   export PATH=/public/software/anaconda/anaconda3/bin:$PATH
   . /public/software/anaconda/anaconda3/etc/profile.d/conda.sh
-  conda activate python36
+  conda activate python37
   ```
 
 - **Check installed packages**
